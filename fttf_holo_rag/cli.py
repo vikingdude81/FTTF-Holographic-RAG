@@ -6,6 +6,8 @@ Usage:
     fttf-holo build --force
     fttf-holo projects
     fttf-holo search --project myapp "database connection"
+    fttf-holo ingest ./my-project ./other-code
+    fttf-holo prep ./research-papers ./chunked-output --include-pdf
 """
 
 import argparse
@@ -30,6 +32,8 @@ def _load_config(args) -> HoloConfig:
         kwargs['holo_cache_path'] = args.cache_path
     if args.dim:
         kwargs['holo_dim'] = args.dim
+    if getattr(args, 'embed_model', None):
+        kwargs['embed_model'] = args.embed_model
     return HoloConfig(**kwargs)
 
 
@@ -90,6 +94,45 @@ def cmd_projects(args):
         print(f"  {p}")
 
 
+def cmd_ingest(args):
+    from fttf_holo_rag.ingest import ingest_directories
+
+    cfg = _load_config(args)
+    result = ingest_directories(
+        args.directories,
+        ollama_url=cfg.ollama_url,
+        embed_model=cfg.embed_model,
+        chroma_path=cfg.chroma_path,
+        collection_name=cfg.chroma_collection,
+        batch_size=args.batch_size,
+        max_chars=args.max_chars,
+        include_pdf=args.include_pdf,
+        holo_cache_path=cfg.holo_cache_path,
+    )
+    print(
+        f"Ingestion complete — added: {result.added}, "
+        f"skipped (duplicate): {result.skipped}, "
+        f"failed: {result.failed}"
+    )
+    if result.failed:
+        sys.exit(1)
+
+
+def cmd_prep(args):
+    from fttf_holo_rag.chunker import prep_directory
+
+    manifest = prep_directory(
+        args.input_dir,
+        args.output_dir,
+        chunk_size=args.chunk_size,
+        overlap=args.overlap,
+        include_pdf=args.include_pdf,
+    )
+    print(
+        f"prep complete — {len(manifest.chunks)} chunk(s) written to {manifest.output_dir}"
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(
         prog='fttf-holo',
@@ -122,6 +165,30 @@ def main():
     # projects
     p_projects = sub.add_parser('projects', help='List all projects')
     p_projects.set_defaults(func=cmd_projects)
+
+    # ingest
+    p_ingest = sub.add_parser(
+        'ingest',
+        help='Crawl directories and ingest documents into ChromaDB',
+    )
+    p_ingest.add_argument('directories', nargs='+', help='Directories to crawl')
+    p_ingest.add_argument('--batch-size', type=int, default=50, help='ChromaDB upsert batch size (default: 50)')
+    p_ingest.add_argument('--max-chars', type=int, default=2000, help='Max characters per document (default: 2000)')
+    p_ingest.add_argument('--include-pdf', action='store_true', help='Extract text from PDF files (requires PyMuPDF)')
+    p_ingest.add_argument('--embed-model', default=None, help='Ollama embedding model name')
+    p_ingest.set_defaults(func=cmd_ingest)
+
+    # prep
+    p_prep = sub.add_parser(
+        'prep',
+        help='Chunk large documents into smaller files ready for ingestion',
+    )
+    p_prep.add_argument('input_dir', help='Directory containing source documents')
+    p_prep.add_argument('output_dir', help='Directory to write chunk files into')
+    p_prep.add_argument('--chunk-size', type=int, default=25000, help='Max characters per chunk (default: 25000)')
+    p_prep.add_argument('--overlap', type=int, default=500, help='Overlap between chunks in characters (default: 500)')
+    p_prep.add_argument('--include-pdf', action='store_true', help='Extract text from PDF files (requires PyMuPDF)')
+    p_prep.set_defaults(func=cmd_prep)
 
     args = parser.parse_args()
 

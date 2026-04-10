@@ -38,6 +38,39 @@ orthogonalized keys, multi-bank binding, CORVACS-lite saturation, and hit-based 
 pip install -e .
 ```
 
+### Quick Start: Ingestion
+
+```bash
+# Install with PDF support
+pip install fttf-holo-rag[pdf]
+
+# Ingest your codebase
+fttf-holo ingest ./my-project ./other-code
+
+# Chunk large documents first
+fttf-holo prep ./research-papers ./chunked-output --include-pdf
+fttf-holo ingest ./chunked-output
+```
+
+Or from Python:
+
+```python
+from fttf_holo_rag import ingest_directories, chunk_text
+
+# Ingest a directory
+result = ingest_directories(
+    ["./my-project"],
+    chroma_path="./chroma_db_storage",
+    collection_name="my_codebase",
+)
+print(f"Added {result.added} files, skipped {result.skipped} duplicates")
+
+# Chunk text manually
+chunks = chunk_text(long_text, chunk_size=25000, overlap=500)
+for chunk in chunks:
+    print(f"Chunk {chunk.index}: chars {chunk.start}–{chunk.end}")
+```
+
 ### As a Python library
 
 ```python
