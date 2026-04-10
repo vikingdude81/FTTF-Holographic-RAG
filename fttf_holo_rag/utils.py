@@ -28,6 +28,18 @@ def extract_project_name(filepath: str, allowed_roots: list[str] | None = None) 
         parts = parts[1:]
     if not parts:
         return 'root'
+    # /home/<user>/projects/<project>/... (Linux)
+    # /home/<user>/code/<project>/...
+    # /home/<user>/repos/<project>/...
+    # /home/<user>/github/<project>/...
+    if (len(parts) >= 4 and parts[0].lower() == 'home'
+            and parts[2].lower() in ('projects', 'code', 'repos', 'github')):
+        return parts[3]
+    # /Users/<user>/Projects/<project>/... (macOS)
+    # /Users/<user>/Developer/<project>/...
+    if (len(parts) >= 4 and parts[0].lower() == 'users'
+            and parts[2].lower() in ('projects', 'developer')):
+        return parts[3]
     # C:\Users\<user>\Projects\<project>
     if len(parts) >= 4 and parts[0].lower() == 'users' and parts[2].lower() == 'projects':
         return parts[3]

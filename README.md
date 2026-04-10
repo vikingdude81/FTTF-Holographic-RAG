@@ -194,6 +194,21 @@ Key parameters:
 - [Ollama](https://ollama.ai/) running locally with an embedding model
 - ChromaDB collection with ingested documents
 
+## Citing
+
+If you use FTTF Holographic RAG in your research or projects, please cite:
+
+```bibtex
+@software{vikingdude81_fttf_holo_rag,
+  author    = {vikingdude81},
+  title     = {FTTF Holographic RAG},
+  version   = {0.1.0},
+  year      = {2026},
+  url       = {https://github.com/vikingdude81/FTTF-Holographic-RAG},
+  license   = {MIT}
+}
+```
+
 ## License
 
 MIT
