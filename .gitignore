@@ -1,0 +1,23 @@
+# Build
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Cache (contains large binary data)
+chroma_db_storage/
+*.pkl
+
+# Environment
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

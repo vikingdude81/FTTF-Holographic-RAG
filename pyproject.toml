@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "fttf-holo-rag"
+version = "0.1.0"
+description = "FTTF Holographic RAG — Fourier Transform holographic memory for local retrieval-augmented generation"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "vikingdude81" },
+]
+keywords = ["holographic", "memory", "RAG", "fourier", "embeddings", "chromadb", "vector-search"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "chromadb>=0.4",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[project.scripts]
+fttf-holo = "fttf_holo_rag.cli:main"
+
+[project.urls]
+Repository = "https://github.com/vikingdude81/FTTF-Holographic-RAG"
+
+[tool.setuptools.packages.find]
+include = ["fttf_holo_rag*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
