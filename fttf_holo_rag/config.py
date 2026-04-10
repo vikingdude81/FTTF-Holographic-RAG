@@ -6,7 +6,6 @@ No external dependency on AI_Command_Center config.py.
 """
 
 from dataclasses import dataclass, field
-from typing import List
 
 
 @dataclass
@@ -52,7 +51,7 @@ class HoloConfig:
     max_snippet_chars: int = 1500
 
     # Project root directories for project-name extraction
-    allowed_project_roots: List[str] = field(default_factory=list)
+    allowed_project_roots: list[str] = field(default_factory=list)
 
     # Ollama health check
     ollama_wait_timeout: int = 60

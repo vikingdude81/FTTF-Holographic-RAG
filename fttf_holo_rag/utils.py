@@ -4,10 +4,8 @@ utils.py — Shared helpers for the holographic RAG system.
 No external framework dependencies.
 """
 
-from typing import List
 
-
-def extract_project_name(filepath: str, allowed_roots: List[str] = None) -> str:
+def extract_project_name(filepath: str, allowed_roots: list[str] | None = None) -> str:
     """Extract the project name from a filepath.
 
     Uses allowed_roots when the path matches a known root,
