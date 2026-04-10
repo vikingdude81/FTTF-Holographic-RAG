@@ -19,6 +19,7 @@ from fttf_holo_rag.engine import (
     HitTracker,
     get_embedding,
 )
+from fttf_holo_rag.utils import extract_project_name
 
 log = logging.getLogger(__name__)
 
@@ -48,10 +49,11 @@ class SearchResult:
     stage: str  # "centroid" or "HRR-fallback"
     projects: list[ProjectResult] = field(default_factory=list)
     promotable: list[tuple[str, int, int]] = field(default_factory=list)
+    holo_dim: int = 10_000
 
     def to_text(self) -> str:
         """Format as human-readable text (compatible with LLM tool output)."""
-        result = f"HOLOGRAPHIC SEARCH v3 (10000D, {self.stage} ranking + 768D file recovery):\n\n"
+        result = f"HOLOGRAPHIC SEARCH v3 ({self.holo_dim}D, {self.stage} ranking + 768D file recovery):\n\n"
         for p in self.projects:
             pct = round(p.similarity * 100, 1)
             hit_str = f", recalled {p.hits}x" if p.hits > 0 else ""
@@ -108,6 +110,12 @@ class HoloRAG:
             return True
         return False
 
+    def _get_collection(self):
+        """Lazily create the ChromaDB client and return the configured collection."""
+        if not hasattr(self, '_db_client') or self._db_client is None:
+            self._db_client = chromadb.PersistentClient(path=self.cfg.chroma_path)
+        return self._db_client.get_collection(name=self.cfg.chroma_collection)
+
     def build_cache(self, force: bool = False):
         """Build or refresh the holographic cache."""
         self._cache.build(force_rebuild=force)
@@ -120,9 +128,17 @@ class HoloRAG:
         Stage 2: File ranking within top projects via raw 768D cosine.
         """
         log.info("[HOLO SEARCH v3] Query: '%s'", query)
+        if not query or not query.strip():
+            raise ValueError("Search query must be a non-empty string.")
         cfg = self.cfg
 
         self._cache.build()
+
+        if not self._cache.loaded:
+            raise RuntimeError(
+                "Holographic cache is empty — ensure ChromaDB is populated and accessible "
+                f"at '{cfg.chroma_path}' with collection '{cfg.chroma_collection}'."
+            )
 
         if not self._ensure_ollama():
             raise ConnectionError("Ollama embedding service is unreachable.")
@@ -151,9 +167,12 @@ class HoloRAG:
         # Track hits
         for proj, _, _ in scores[:3]:
             tracker.record_hit(proj, session_id=session_id)
+        tracker.flush()
 
         # Stage 2: File ranking
         stage = "centroid" if use_centroids else "HRR-fallback"
+        q_vec = np.array(query_emb_raw, dtype=np.float32)
+        n_q2 = norm(q_vec)
         projects = []
         for rank, (proj_name, boosted, raw) in enumerate(scores[:top_k_projects]):
             files = cache['files'].get(proj_name, [])
@@ -168,8 +187,7 @@ class HoloRAG:
                     if fp_emb is None:
                         continue
                     fp_vec = np.array(fp_emb, dtype=np.float32)
-                    q_vec = np.array(query_emb_raw, dtype=np.float32)
-                    n_f, n_q2 = norm(fp_vec), norm(q_vec)
+                    n_f = norm(fp_vec)
                     sim_file = float(np.dot(q_vec, fp_vec) / (n_q2 * n_f)) if n_f > 1e-12 and n_q2 > 1e-12 else 0.0
                     file_scores.append((sim_file, fp))
                 file_scores.sort(reverse=True)
@@ -194,6 +212,7 @@ class HoloRAG:
             stage=stage,
             projects=projects,
             promotable=promotable[:5],
+            holo_dim=cfg.holo_dim,
         )
         log.info('[HOLO SEARCH v3 COMPLETE]')
         return result
@@ -201,6 +220,8 @@ class HoloRAG:
     def search_scoped(self, query: str, project_name: str,
                       top_k: int = 5) -> list[FileResult]:
         """Search within a specific project by 768D cosine similarity."""
+        if not query or not query.strip():
+            raise ValueError("Search query must be a non-empty string.")
         self._cache.build()
 
         if not self._ensure_ollama():
@@ -230,8 +251,7 @@ class HoloRAG:
 
     def list_projects(self) -> list[str]:
         """List all project names in the ChromaDB collection."""
-        db_client = chromadb.PersistentClient(path=self.cfg.chroma_path)
-        collection = db_client.get_collection(name=self.cfg.chroma_collection)
+        collection = self._get_collection()
         data = collection.get(include=['metadatas'], limit=self.cfg.max_docs)
         projects = set()
         for m in data['metadatas']:
@@ -242,8 +262,7 @@ class HoloRAG:
     def get_file_content(self, filepath: str) -> str | None:
         """Retrieve a file's content from ChromaDB by its filepath (doc ID)."""
         try:
-            db_client = chromadb.PersistentClient(path=self.cfg.chroma_path)
-            collection = db_client.get_collection(name=self.cfg.chroma_collection)
+            collection = self._get_collection()
             result = collection.get(ids=[filepath], include=['documents'])
             if result['documents']:
                 return result['documents'][0]

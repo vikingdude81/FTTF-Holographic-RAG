@@ -199,6 +199,7 @@ class HitTracker:
         self.path = path
         self.hits = {}
         self.sessions = {}
+        self._dirty = False
         if path and os.path.exists(path):
             self._load()
 
@@ -208,7 +209,13 @@ class HitTracker:
             if key not in self.sessions:
                 self.sessions[key] = set()
             self.sessions[key].add(session_id)
-        self._save()
+        self._dirty = True
+
+    def flush(self):
+        """Persist hit data to disk if there are unsaved changes."""
+        if self._dirty:
+            self._save()
+            self._dirty = False
 
     def get_hits(self, key):
         return self.hits.get(key, 0)

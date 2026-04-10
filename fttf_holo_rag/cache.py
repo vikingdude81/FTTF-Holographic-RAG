@@ -10,7 +10,7 @@ import hashlib
 import hmac
 import logging
 import os
-import pickle
+import pickle  # used only for dumps() in save_signed_cache; loads() gated by HMAC verification
 import time
 
 import chromadb

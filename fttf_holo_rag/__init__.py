@@ -16,11 +16,6 @@ from fttf_holo_rag.engine import (
     MultiBankMemory,
     DimensionProjector,
     HitTracker,
-    sharpen,
-    corvacs_lite,
-    decode_signal,
-    orthogonalize_keys,
-    get_embedding,
 )
 
 __version__ = "0.1.0"
@@ -32,9 +27,4 @@ __all__ = [
     "MultiBankMemory",
     "DimensionProjector",
     "HitTracker",
-    "sharpen",
-    "corvacs_lite",
-    "decode_signal",
-    "orthogonalize_keys",
-    "get_embedding",
 ]

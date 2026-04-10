@@ -301,6 +301,7 @@ class TestHitTracker(unittest.TestCase):
         tracker1 = HitTracker(path=self.path)
         tracker1.record_hit('proj', session_id='s1')
         tracker1.record_hit('proj', session_id='s2')
+        tracker1.flush()
         tracker2 = HitTracker(path=self.path)
         self.assertEqual(tracker2.get_hits('proj'), 2)
         self.assertEqual(tracker2.get_session_count('proj'), 2)

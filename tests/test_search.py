@@ -84,12 +84,19 @@ class TestImports(unittest.TestCase):
         from fttf_holo_rag import (
             HoloRAG, HoloConfig,
             HolographicMemory, MultiBankMemory, DimensionProjector,
-            HitTracker, sharpen, corvacs_lite, decode_signal,
-            orthogonalize_keys, get_embedding,
+            HitTracker,
         )
         self.assertIsNotNone(HoloRAG)
         self.assertIsNotNone(HoloConfig)
         self.assertIsNotNone(HolographicMemory)
+
+    def test_engine_imports_still_available(self):
+        """Internal helpers remain importable directly from fttf_holo_rag.engine."""
+        from fttf_holo_rag.engine import (
+            sharpen, corvacs_lite, decode_signal,
+            orthogonalize_keys, get_embedding,
+        )
+        self.assertIsNotNone(sharpen)
 
     def test_version(self):
         import fttf_holo_rag

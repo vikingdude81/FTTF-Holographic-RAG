@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "FTTF Holographic RAG"
+type: software
+version: "0.1.0"
+date-released: "2026-04-10"
+license: MIT
+authors:
+  - family-names: ""
+    alias: vikingdude81
+repository-code: "https://github.com/vikingdude81/FTTF-Holographic-RAG"
+keywords:
+  - holographic-memory
+  - RAG
+  - retrieval-augmented-generation
+  - fourier-transform
+  - vector-search
+  - embeddings
+abstract: >-
+  A standalone holographic search system using Fourier Transform-based
+  Holographic Reduced Representations (HRR) for local retrieval-augmented
+  generation. Features 2-stage search with centroid project ranking and
+  768D cosine file recovery, multi-bank binding, key orthogonalization,
+  and CORVACS-lite signal processing.

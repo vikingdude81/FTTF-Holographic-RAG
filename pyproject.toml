@@ -16,7 +16,6 @@ keywords = ["holographic", "memory", "RAG", "fourier", "embeddings", "chromadb",
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -41,6 +40,8 @@ fttf-holo = "fttf_holo_rag.cli:main"
 
 [project.urls]
 Repository = "https://github.com/vikingdude81/FTTF-Holographic-RAG"
+Issues = "https://github.com/vikingdude81/FTTF-Holographic-RAG/issues"
+Changelog = "https://github.com/vikingdude81/FTTF-Holographic-RAG/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 include = ["fttf_holo_rag*"]
