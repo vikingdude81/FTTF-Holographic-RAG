@@ -5,13 +5,13 @@ Manages the on-disk cache of holographic project vectors, centroids,
 file embeddings, and keys.  All ChromaDB interaction lives here.
 """
 
+import getpass
 import hashlib
 import hmac
 import logging
 import os
 import pickle
 import time
-from typing import Optional
 
 import chromadb
 import numpy as np
@@ -42,7 +42,7 @@ SKIP_DIRS = {
 
 def _cache_hmac_key(cache_path: str) -> bytes:
     """Derive a machine-local HMAC key for cache integrity."""
-    secret = f"holo-cache-{os.path.abspath(cache_path)}-{os.getlogin()}"
+    secret = f"holo-cache-{os.path.abspath(cache_path)}-{getpass.getuser()}"
     return hashlib.sha256(secret.encode()).digest()
 
 
@@ -212,18 +212,18 @@ class HoloCache:
                 try:
                     cached = load_signed_cache(cfg.holo_cache_path)
                 except ValueError:
-                    log.warning('[HOLO] Unsigned cache detected. Loading with legacy fallback.')
-                    with open(cfg.holo_cache_path, 'rb') as f:
-                        cached = pickle.load(f)
-                db_client = chromadb.PersistentClient(path=cfg.chroma_path)
-                coll = db_client.get_collection(name=cfg.chroma_collection)
-                current_hash = mtime_hash(coll, cfg.max_docs)
-                if cached.get('mtime_hash') == current_hash:
-                    self._data.update(cached)
-                    log.info('[HOLO] Loaded cache: %d projects, %d docs.',
-                             len(self._data['vectors']), self._data['doc_count'])
-                    return
-                log.info('[HOLO] Cache stale. Rebuilding...')
+                    log.warning('[HOLO] Unsigned/tampered cache detected. Rebuilding...')
+                    cached = None
+                if cached is not None:
+                    db_client = chromadb.PersistentClient(path=cfg.chroma_path)
+                    coll = db_client.get_collection(name=cfg.chroma_collection)
+                    current_hash = mtime_hash(coll, cfg.max_docs)
+                    if cached.get('mtime_hash') == current_hash:
+                        self._data.update(cached)
+                        log.info('[HOLO] Loaded cache: %d projects, %d docs.',
+                                 len(self._data['vectors']), self._data['doc_count'])
+                        return
+                    log.info('[HOLO] Cache stale. Rebuilding...')
             except Exception as e:
                 log.warning('[HOLO] Cache load failed (%s). Rebuilding...', e)
 

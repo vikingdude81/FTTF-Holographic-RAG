@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "fttf-holo-rag"
@@ -16,7 +16,7 @@ keywords = ["holographic", "memory", "RAG", "fourier", "embeddings", "chromadb",
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
+
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -44,6 +44,9 @@ Repository = "https://github.com/vikingdude81/FTTF-Holographic-RAG"
 
 [tool.setuptools.packages.find]
 include = ["fttf_holo_rag*"]
+
+[tool.setuptools.package-data]
+fttf_holo_rag = ["py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
