@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fttf-holo-rag"
-version = "0.1.0"
+version = "0.2.0"
 description = "FTTF Holographic RAG — Fourier Transform holographic memory for local retrieval-augmented generation"
 readme = "README.md"
 license = "MIT"
@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 authors = [
     { name = "vikingdude81" },
 ]
-keywords = ["holographic", "memory", "RAG", "fourier", "embeddings", "chromadb", "vector-search"]
+keywords = ["holographic", "memory", "RAG", "fourier", "embeddings", "chromadb", "vector-search", "keyword-search", "BM25", "hybrid-search"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

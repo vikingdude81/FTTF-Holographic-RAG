@@ -5,6 +5,8 @@
 A standalone, framework-agnostic holographic search system that uses:
 - **Stage 1**: Centroid-based project ranking (10,000D holographic vectors)
 - **Stage 2**: Raw 768D cosine similarity for file-level recovery
+- **Keyword search**: BM25 lexical matching for exact word/identifier lookup
+- **Hybrid search**: Fused vector + keyword scoring with tunable alpha blending
 
 Built on Holographic Reduced Representations (HRR) with signal processing upgrades:
 orthogonalized keys, multi-bank binding, CORVACS-lite saturation, and hit-based promotion.
@@ -12,22 +14,23 @@ orthogonalized keys, multi-bank binding, CORVACS-lite saturation, and hit-based 
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                   Your Application                   │
-│  (AI Command Center / LangChain / custom pipeline)   │
-├─────────────────────────────────────────────────────┤
-│                  fttf_holo_rag                       │
-│  HoloRAG.search()  →  Project ranking (centroids)   │
-│                    →  File recovery (768D cosine)    │
-├─────────────────────────────────────────────────────┤
-│  engine.py         │  cache.py        │  search.py   │
-│  HRR primitives    │  HMAC-signed     │  2-stage     │
-│  Signal processing │  Pickle cache    │  search API  │
-│  Key orthogonal.   │  Ollama embed    │  Hit tracker │
-├─────────────────────────────────────────────────────┤
-│           ChromaDB            │       Ollama          │
-│      (document store)         │  (embedding service)  │
-└─────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│                    Your Application                      │
+│   (AI Command Center / LangChain / custom pipeline)      │
+├─────────────────────────────────────────────────────────┤
+│                    fttf_holo_rag                          │
+│  HoloRAG.search()          →  Project ranking (10kD)     │
+│                             →  File recovery (768D)      │
+│  HoloRAG.keyword_search()  →  BM25 lexical matching      │
+│  HoloRAG.hybrid_search()   →  Vector + keyword fusion    │
+├─────────────────────────────────────────────────────────┤
+│  engine.py   │ cache.py    │ search.py   │ keyword.py    │
+│  HRR prims   │ HMAC cache  │ 2-stage API │ BM25 index    │
+│  Signal proc │ Ollama emb  │ Hit tracker │ Tokenizer     │
+├─────────────────────────────────────────────────────────┤
+│            ChromaDB             │        Ollama           │
+│       (document store)          │   (embedding service)   │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ## Quick Start
@@ -85,9 +88,17 @@ config = HoloConfig(
 
 rag = HoloRAG(config)
 
-# Search across all projects
+# Search across all projects (holographic vector search)
 result = rag.search("websocket authentication")
 print(result.to_text())
+
+# Keyword search — BM25 word matching (great for identifiers & error messages)
+kw_result = rag.keyword_search("ConnectionRefusedError")
+print(kw_result.to_text())
+
+# Hybrid search — fuse vector + keyword scores
+hybrid = rag.hybrid_search("websocket auth", alpha=0.5)  # 0=keyword, 1=vector
+print(hybrid.to_text())
 
 # Search within a specific project
 files = rag.search_scoped("database connection", "my-project")
@@ -104,10 +115,20 @@ rag.build_cache(force=True)
 ### CLI
 
 ```bash
-# Search
+# Holographic vector search
 fttf-holo search "holographic memory fourier transform"
 fttf-holo search --project NanoGPT "attention mechanism"
 fttf-holo search --json "websocket server"
+
+# Keyword search (BM25 word matching)
+fttf-holo keyword "ConnectionRefusedError"
+fttf-holo keyword "async def handle_request" --top-k 20
+fttf-holo keyword --json "ImportError torch"
+
+# Hybrid search (vector + keyword fusion)
+fttf-holo hybrid "websocket authentication"
+fttf-holo hybrid "database pool" --alpha 0.3   # keyword-heavy
+fttf-holo hybrid "machine learning" --alpha 0.8 # vector-heavy
 
 # Build/rebuild cache
 fttf-holo build
@@ -176,6 +197,14 @@ def holographic_search(query: str) -> str:
     """Search codebase using holographic memory."""
     return rag.search(query).to_text()
 ```
+
+## Search Modes
+
+| Mode | Command | Best For |
+|------|---------|----------|
+| **Vector** | `search` | Semantic similarity, conceptual queries |
+| **Keyword** | `keyword` | Exact identifiers, error messages, function names |
+| **Hybrid** | `hybrid` | Best of both — tunable via `--alpha` |
 
 ## How It Works
 

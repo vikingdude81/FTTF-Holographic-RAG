@@ -71,6 +71,56 @@ def cmd_search(args):
             print(result.to_text())
 
 
+def cmd_keyword(args):
+    cfg = _load_config(args)
+    rag = HoloRAG(cfg)
+    query = ' '.join(args.query)
+    result = rag.keyword_search(query, top_k=args.top_k)
+    if args.json:
+        out = {
+            'query': result.query,
+            'total_indexed': result.total_indexed,
+            'results': [
+                {
+                    'filepath': r.filepath,
+                    'project': r.project,
+                    'score': round(r.score, 4),
+                    'snippet': r.snippet,
+                }
+                for r in result.results
+            ],
+        }
+        print(json.dumps(out, indent=2))
+    else:
+        print(result.to_text())
+
+
+def cmd_hybrid(args):
+    cfg = _load_config(args)
+    rag = HoloRAG(cfg)
+    query = ' '.join(args.query)
+    result = rag.hybrid_search(query, top_k=args.top_k, alpha=args.alpha)
+    if args.json:
+        out = {
+            'query': result.query,
+            'alpha': result.alpha,
+            'results': [
+                {
+                    'filepath': r.filepath,
+                    'project': r.project,
+                    'vector_score': round(r.vector_score, 4),
+                    'keyword_score': round(r.keyword_score, 4),
+                    'combined_score': round(r.combined_score, 4),
+                    'snippet': r.snippet,
+                }
+                for r in result.results
+            ],
+        }
+        print(json.dumps(out, indent=2))
+    else:
+        print(result.to_text())
+
+
 def cmd_build(args):
     cfg = _load_config(args)
     rag = HoloRAG(cfg)
@@ -156,6 +206,22 @@ def main():
     p_search.add_argument('--top-k', '-k', type=int, default=5, help='Number of results')
     p_search.add_argument('--json', action='store_true', help='Output as JSON')
     p_search.set_defaults(func=cmd_search)
+
+    # keyword
+    p_keyword = sub.add_parser('keyword', help='BM25 keyword search across documents')
+    p_keyword.add_argument('query', nargs='+', help='Search query (matched by word)')
+    p_keyword.add_argument('--top-k', '-k', type=int, default=10, help='Number of results')
+    p_keyword.add_argument('--json', action='store_true', help='Output as JSON')
+    p_keyword.set_defaults(func=cmd_keyword)
+
+    # hybrid
+    p_hybrid = sub.add_parser('hybrid', help='Hybrid vector + keyword search')
+    p_hybrid.add_argument('query', nargs='+', help='Search query')
+    p_hybrid.add_argument('--top-k', '-k', type=int, default=10, help='Number of results')
+    p_hybrid.add_argument('--alpha', '-a', type=float, default=0.5,
+                          help='Vector weight (0.0=pure keyword, 1.0=pure vector, default: 0.5)')
+    p_hybrid.add_argument('--json', action='store_true', help='Output as JSON')
+    p_hybrid.set_defaults(func=cmd_hybrid)
 
     # build
     p_build = sub.add_parser('build', help='Build/rebuild the holographic cache')

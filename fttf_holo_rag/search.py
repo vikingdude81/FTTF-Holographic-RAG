@@ -19,6 +19,7 @@ from fttf_holo_rag.engine import (
     HitTracker,
     get_embedding,
 )
+from fttf_holo_rag.keyword import KeywordIndex
 from fttf_holo_rag.utils import extract_project_name
 
 log = logging.getLogger(__name__)
@@ -40,6 +41,70 @@ class ProjectResult:
     file_count: int
     hits: int = 0
     top_files: list[FileResult] = field(default_factory=list)
+
+
+@dataclass
+class KeywordResult:
+    """A single keyword search hit."""
+    doc_id: str
+    filepath: str
+    project: str
+    score: float       # BM25 score (normalized 0–1)
+    snippet: str = ''  # first N chars of document text
+
+
+@dataclass
+class KeywordSearchResult:
+    """Complete keyword search result."""
+    query: str
+    results: list[KeywordResult] = field(default_factory=list)
+    total_indexed: int = 0
+
+    def to_text(self) -> str:
+        out = f"KEYWORD SEARCH (BM25, {self.total_indexed} docs indexed):\n\n"
+        if not self.results:
+            out += "  (no matches)\n"
+            return out
+        for r in self.results:
+            pct = round(r.score * 100, 1)
+            out += f"-> [{r.project}] {r.filepath} (relevance: {pct}%)\n"
+            if r.snippet:
+                out += f"   {r.snippet}\n"
+        return out
+
+
+@dataclass
+class HybridResult:
+    """A fused result combining vector and keyword scores."""
+    doc_id: str
+    filepath: str
+    project: str
+    vector_score: float
+    keyword_score: float
+    combined_score: float
+    snippet: str = ''
+
+
+@dataclass
+class HybridSearchResult:
+    """Complete hybrid search result."""
+    query: str
+    alpha: float  # weight given to vector score (1-alpha = keyword weight)
+    results: list[HybridResult] = field(default_factory=list)
+
+    def to_text(self) -> str:
+        out = f"HYBRID SEARCH (alpha={self.alpha:.2f}, vec+keyword fusion):\n\n"
+        if not self.results:
+            out += "  (no matches)\n"
+            return out
+        for r in self.results:
+            pct = round(r.combined_score * 100, 1)
+            out += (f"-> [{r.project}] {r.filepath} "
+                    f"(combined: {pct}%, vec: {r.vector_score*100:.1f}%, "
+                    f"kw: {r.keyword_score*100:.1f}%)\n")
+            if r.snippet:
+                out += f"   {r.snippet}\n"
+        return out
 
 
 @dataclass
@@ -91,6 +156,7 @@ class HoloRAG:
         self._projector = DimensionProjector(
             self.cfg.embed_dim, self.cfg.holo_dim, seed=42
         )
+        self._keyword_index: KeywordIndex | None = None
 
     @property
     def cache(self) -> HoloCache:
@@ -269,3 +335,169 @@ class HoloRAG:
         except Exception as exc:
             log.warning('[HOLO] get_file_content failed for %r: %s', filepath, exc)
         return None
+
+    # ─────────────────────────────────────────────────────────
+    # Keyword (BM25) Search
+    # ─────────────────────────────────────────────────────────
+
+    def _ensure_keyword_index(self) -> KeywordIndex:
+        """Build or return the cached BM25 keyword index."""
+        if self._keyword_index is not None and self._keyword_index.doc_count > 0:
+            return self._keyword_index
+        collection = self._get_collection()
+        idx = KeywordIndex()
+        idx.build_from_chromadb(collection, max_docs=self.cfg.max_docs)
+        self._keyword_index = idx
+        return idx
+
+    def keyword_search(self, query: str, top_k: int = 10,
+                       snippet_chars: int = 120) -> KeywordSearchResult:
+        """BM25 keyword search across all documents in ChromaDB.
+
+        Unlike the holographic vector search, this matches exact words
+        and is useful for known identifiers, error messages, or terms
+        that don't embed well.
+        """
+        if not query or not query.strip():
+            raise ValueError("Search query must be a non-empty string.")
+
+        idx = self._ensure_keyword_index()
+        hits = idx.search_normalized(query, top_k=top_k)
+
+        # Fetch metadata + snippets for the hits
+        if not hits:
+            return KeywordSearchResult(query=query, total_indexed=idx.doc_count)
+
+        doc_ids = [doc_id for doc_id, _ in hits]
+        collection = self._get_collection()
+        fetched = collection.get(
+            ids=doc_ids,
+            include=['documents', 'metadatas'],
+        )
+        meta_map = {}
+        doc_map = {}
+        for did, meta, doc in zip(
+            fetched['ids'], fetched['metadatas'], fetched['documents']
+        ):
+            meta_map[did] = meta
+            doc_map[did] = doc
+
+        results = []
+        for doc_id, score in hits:
+            meta = meta_map.get(doc_id, {})
+            fp = meta.get('filepath', doc_id)
+            proj = extract_project_name(fp, self.cfg.allowed_project_roots)
+            text = doc_map.get(doc_id, '')
+            snippet = (text[:snippet_chars] + '...') if text and len(text) > snippet_chars else (text or '')
+            results.append(KeywordResult(
+                doc_id=doc_id,
+                filepath=fp,
+                project=proj,
+                score=score,
+                snippet=snippet,
+            ))
+
+        return KeywordSearchResult(
+            query=query, results=results, total_indexed=idx.doc_count,
+        )
+
+    # ─────────────────────────────────────────────────────────
+    # Hybrid Search (Vector + Keyword Fusion)
+    # ─────────────────────────────────────────────────────────
+
+    def hybrid_search(self, query: str, top_k: int = 10,
+                      alpha: float = 0.5,
+                      snippet_chars: int = 120) -> HybridSearchResult:
+        """Fuse holographic vector similarity with BM25 keyword scores.
+
+        alpha controls the blend:
+            1.0 = pure vector search
+            0.0 = pure keyword search
+            0.5 = equal weight (default)
+
+        The fusion uses min-max normalized scores from both sources,
+        then combines: score = alpha * vec_score + (1-alpha) * kw_score.
+        """
+        if not query or not query.strip():
+            raise ValueError("Search query must be a non-empty string.")
+        if not 0.0 <= alpha <= 1.0:
+            raise ValueError("alpha must be between 0.0 and 1.0")
+
+        # --- Keyword scores ---
+        idx = self._ensure_keyword_index()
+        kw_all = idx.search_normalized(query, top_k=top_k * 3)
+        kw_scores = {doc_id: score for doc_id, score in kw_all}
+
+        # --- Vector scores (file-level 768D cosine) ---
+        self._cache.build()
+        if not self._cache.loaded:
+            raise RuntimeError("Holographic cache is empty.")
+        if not self._ensure_ollama():
+            raise ConnectionError("Ollama embedding service is unreachable.")
+
+        query_emb = get_embedding(query, self.cfg.ollama_url, self.cfg.embed_model)
+        q_vec = np.array(query_emb, dtype=np.float32)
+        n_q = norm(q_vec)
+
+        vec_scores: dict[str, tuple[float, str]] = {}  # doc_id -> (sim, project)
+        embeddings = self._cache.data.get('embeddings') or {}
+        for proj_name, emb_map in embeddings.items():
+            for fp, emb in emb_map.items():
+                fp_vec = np.array(emb, dtype=np.float32)
+                n_f = norm(fp_vec)
+                sim = float(np.dot(q_vec, fp_vec) / (n_q * n_f)) if n_f > 1e-12 and n_q > 1e-12 else 0.0
+                vec_scores[fp] = (sim, proj_name)
+
+        # Normalize vector scores to 0-1
+        if vec_scores:
+            max_vec = max(s for s, _ in vec_scores.values())
+            min_vec = min(s for s, _ in vec_scores.values())
+            span = max_vec - min_vec if max_vec > min_vec else 1.0
+            vec_norm = {did: ((s - min_vec) / span, proj) for did, (s, proj) in vec_scores.items()}
+        else:
+            vec_norm = {}
+
+        # --- Fuse ---
+        all_doc_ids = set(kw_scores.keys()) | set(vec_norm.keys())
+        fused: list[tuple[str, float, float, float, str]] = []
+        for doc_id in all_doc_ids:
+            v_score, proj = vec_norm.get(doc_id, (0.0, ''))
+            k_score = kw_scores.get(doc_id, 0.0)
+            # Resolve project from keyword side if missing
+            if not proj and doc_id in kw_scores:
+                proj = ''
+            combined = alpha * v_score + (1 - alpha) * k_score
+            fused.append((doc_id, combined, v_score, k_score, proj))
+
+        fused.sort(key=lambda x: x[1], reverse=True)
+        top = fused[:top_k]
+
+        # Fetch metadata + snippets
+        if top:
+            doc_ids = [d[0] for d in top]
+            collection = self._get_collection()
+            fetched = collection.get(ids=doc_ids, include=['documents', 'metadatas'])
+            meta_map = {did: m for did, m in zip(fetched['ids'], fetched['metadatas'])}
+            doc_map = {did: d for did, d in zip(fetched['ids'], fetched['documents'])}
+        else:
+            meta_map, doc_map = {}, {}
+
+        results = []
+        for doc_id, combined, v_score, k_score, proj in top:
+            meta = meta_map.get(doc_id, {})
+            fp = meta.get('filepath', doc_id)
+            if not proj:
+                proj = extract_project_name(fp, self.cfg.allowed_project_roots)
+            text = doc_map.get(doc_id, '')
+            snippet = (text[:snippet_chars] + '...') if text and len(text) > snippet_chars else (text or '')
+            results.append(HybridResult(
+                doc_id=doc_id,
+                filepath=fp,
+                project=proj,
+                vector_score=v_score,
+                keyword_score=k_score,
+                combined_score=combined,
+                snippet=snippet,
+            ))
+
+        return HybridSearchResult(query=query, alpha=alpha, results=results)

@@ -100,7 +100,7 @@ class TestImports(unittest.TestCase):
 
     def test_version(self):
         import fttf_holo_rag
-        self.assertEqual(fttf_holo_rag.__version__, '0.1.0')
+        self.assertEqual(fttf_holo_rag.__version__, '0.2.0')
 
 
 if __name__ == '__main__':

@@ -22,10 +22,11 @@ from fttf_holo_rag.engine import (
     DimensionProjector,
     HitTracker,
 )
+from fttf_holo_rag.keyword import KeywordIndex
 from fttf_holo_rag.ingest import ingest_directories
 from fttf_holo_rag.chunker import chunk_text
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = [
     "HoloRAG",
@@ -34,6 +35,7 @@ __all__ = [
     "MultiBankMemory",
     "DimensionProjector",
     "HitTracker",
+    "KeywordIndex",
     "ingest_directories",
     "chunk_text",
 ]

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
 title: "FTTF Holographic RAG"
 type: software
-version: "0.1.0"
-date-released: "2026-04-10"
+version: "0.2.0"
+date-released: "2026-04-11"
 license: MIT
 authors:
   - family-names: ""
@@ -15,10 +15,14 @@ keywords:
   - retrieval-augmented-generation
   - fourier-transform
   - vector-search
+  - keyword-search
+  - BM25
+  - hybrid-search
   - embeddings
 abstract: >-
   A standalone holographic search system using Fourier Transform-based
   Holographic Reduced Representations (HRR) for local retrieval-augmented
   generation. Features 2-stage search with centroid project ranking and
-  768D cosine file recovery, multi-bank binding, key orthogonalization,
-  and CORVACS-lite signal processing.
+  768D cosine file recovery, BM25 keyword search, hybrid vector+keyword
+  fusion, multi-bank binding, key orthogonalization, and CORVACS-lite
+  signal processing.
