@@ -28,4 +28,7 @@ jobs:
         run: pip install -e ".[dev]"
 
       - name: Run tests
-        run: pytest tests/ -v --tb=short
+        run: pytest tests/ -v --tb=short --cov=fttf_holo_rag --cov-report=term-missing
+
+      - name: Type check
+        run: mypy fttf_holo_rag --ignore-missing-imports

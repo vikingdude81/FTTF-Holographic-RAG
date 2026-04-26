@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"def \" fttf_holo_rag/*.py)",
+      "Bash(grep -n \"logging\\\\|print\\(\" fttf_holo_rag/*.py)",
+      "Bash(grep -rn \"NotImplemented\\\\|pass$\" fttf_holo_rag/*.py)",
+      "Bash(pip list:*)"
+    ]
+  }
+}

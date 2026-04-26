@@ -38,6 +38,7 @@ def _load_config(args) -> HoloConfig:
 
 
 def cmd_search(args):
+    """Run holographic vector search, optionally scoped to a project."""
     cfg = _load_config(args)
     rag = HoloRAG(cfg)
     query = ' '.join(args.query)
@@ -72,6 +73,7 @@ def cmd_search(args):
 
 
 def cmd_keyword(args):
+    """Run BM25 keyword search across all indexed documents."""
     cfg = _load_config(args)
     rag = HoloRAG(cfg)
     query = ' '.join(args.query)
@@ -96,6 +98,7 @@ def cmd_keyword(args):
 
 
 def cmd_hybrid(args):
+    """Run hybrid vector + keyword search with configurable alpha weighting."""
     cfg = _load_config(args)
     rag = HoloRAG(cfg)
     query = ' '.join(args.query)
@@ -122,6 +125,7 @@ def cmd_hybrid(args):
 
 
 def cmd_build(args):
+    """Build or force-rebuild the holographic cache from ChromaDB."""
     cfg = _load_config(args)
     rag = HoloRAG(cfg)
     print(f"Building holographic cache from {cfg.chroma_path}...")
@@ -136,6 +140,7 @@ def cmd_build(args):
 
 
 def cmd_projects(args):
+    """List all projects indexed in the ChromaDB collection."""
     cfg = _load_config(args)
     rag = HoloRAG(cfg)
     projects = rag.list_projects()
@@ -145,6 +150,7 @@ def cmd_projects(args):
 
 
 def cmd_ingest(args):
+    """Crawl one or more directories and ingest documents into ChromaDB."""
     from fttf_holo_rag.ingest import ingest_directories
 
     cfg = _load_config(args)
@@ -169,6 +175,7 @@ def cmd_ingest(args):
 
 
 def cmd_prep(args):
+    """Chunk large documents into smaller files ready for ingestion."""
     from fttf_holo_rag.chunker import prep_directory
 
     manifest = prep_directory(

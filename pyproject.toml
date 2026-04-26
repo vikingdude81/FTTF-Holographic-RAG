@@ -34,6 +34,7 @@ pdf = ["PyMuPDF>=1.23"]
 dev = [
     "pytest>=7.0",
     "pytest-cov",
+    "mypy>=1.0",
 ]
 
 [project.scripts]
