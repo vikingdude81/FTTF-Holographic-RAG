@@ -84,15 +84,25 @@ class KeywordIndex:
         self._avgdl = sum(self._doc_lens.values()) / self._n if self._n else 0.0
 
     def build_from_chromadb(self, collection, max_docs: int = 60_000,
-                            project_field: str = 'filepath') -> None:
-        """Bulk-load documents from a ChromaDB collection."""
-        data = collection.get(include=['documents', 'metadatas'], limit=max_docs)
-        for doc_id, doc_text, meta in zip(
-            data['ids'], data['documents'], data['metadatas']
-        ):
-            if not doc_text or not doc_text.strip():
-                continue
-            self.add(doc_id, doc_text)
+                            project_field: str = 'filepath',
+                            batch_size: int = 500) -> None:
+        """Bulk-load documents from a ChromaDB collection (batched to avoid SQLite variable limits)."""
+        offset = 0
+        total = 0
+        while total < max_docs:
+            fetch = min(batch_size, max_docs - total)
+            data = collection.get(include=['documents', 'metadatas'], limit=fetch, offset=offset)
+            ids = data.get('ids', [])
+            if not ids:
+                break
+            for doc_id, doc_text, meta in zip(ids, data['documents'], data['metadatas']):
+                if not doc_text or not doc_text.strip():
+                    continue
+                self.add(doc_id, doc_text)
+            total += len(ids)
+            offset += len(ids)
+            if len(ids) < fetch:
+                break
         log.info('[KEYWORD] Indexed %d documents.', self._n)
 
     # ── Search ──

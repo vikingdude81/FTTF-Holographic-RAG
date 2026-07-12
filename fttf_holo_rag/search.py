@@ -316,13 +316,22 @@ class HoloRAG:
         return [FileResult(filepath=fp, relevance=sim) for sim, fp in scores[:top_k]]
 
     def list_projects(self) -> list[str]:
-        """List all project names in the ChromaDB collection."""
+        """List all project names in the ChromaDB collection (batched to avoid SQLite variable limits)."""
         collection = self._get_collection()
-        data = collection.get(include=['metadatas'], limit=self.cfg.max_docs)
-        projects = set()
-        for m in data['metadatas']:
-            fp = m.get('filepath', '')
-            projects.add(extract_project_name(fp, self.cfg.allowed_project_roots))
+        projects: set[str] = set()
+        offset = 0
+        batch_size = 500
+        while True:
+            data = collection.get(include=['metadatas'], limit=batch_size, offset=offset)
+            ids = data.get('ids', [])
+            if not ids:
+                break
+            for m in data['metadatas']:
+                fp = m.get('filepath', '')
+                projects.add(extract_project_name(fp, self.cfg.allowed_project_roots))
+            if len(ids) < batch_size:
+                break
+            offset += len(ids)
         return sorted(projects)
 
     def get_file_content(self, filepath: str) -> str | None:
