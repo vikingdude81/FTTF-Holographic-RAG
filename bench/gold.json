@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "created": "2026-10-27",
+    "corpus": "theology-philosophy-archive (101 docs: 40 chats + 38 topics + 21 papers/drafts incl. 4 PDFs)",
+    "gold_construction": "verified archive link graph + corpus knowledge; basenames are unique across dirs",
+    "types": "semantic=paraphrase no-keyword-overlap, ident=exact identifier, multi=2+ golds (multi-hop)"
+  },
+  "queries": [
+    {"id": "q01", "type": "semantic", "query": "why does divine foreknowledge not destroy human freedom", "gold": ["boethius-consolation-foreknowledge-eternal-present.md", "boethius-book-v-mind-not-a-mirror-agent-intellect.md"]},
+    {"id": "q02", "type": "semantic", "query": "the mind is not a mirror of things; it knows everything by its own mode of knowing", "gold": ["boethius-book-v-mind-not-a-mirror-agent-intellect.md", "2026-04-26_boethian-hierarchy-of-knowing.md"]},
+    {"id": "q03", "type": "semantic", "query": "can anyone be forced to believe, and may the state command belief at all", "gold": ["coerced-belief-and-legitimacy.md", "political-authority-boundary-worth.md"]},
+    {"id": "q04", "type": "semantic", "query": "the difference between reconfiguring someone's behavior and changing what they fundamentally are", "gold": ["descent-vs-modulation-constitution-change.md", "pelagianism-grace-vs-moral-capacity.md"]},
+    {"id": "q05", "type": "semantic", "query": "knowing the good but lacking the power to will it without help beyond yourself", "gold": ["scupoli-distrust-self-unaided-will.md", "pelagianism-grace-vs-moral-capacity.md", "2026-08-20_augustine-confessions-vii-grace-restoration.md"]},
+    {"id": "q06", "type": "semantic", "query": "was Marx's economics actually taken from a French anarchist shopkeeper", "gold": ["marx-book-hegelianism-to-communism.md", "2026-08-30_marx-proudhon-property-genealogy.md"]},
+    {"id": "q07", "type": "semantic", "query": "the commonwealth as a false god; theology of the beast that swallows the individual", "gold": ["hobbes-leviathan-mortal-god.md", "thiel-hobbes-antichrist-nashville-lectures.md"]},
+    {"id": "q08", "type": "semantic", "query": "God does not foresee; He sees all at once in an eternal present", "gold": ["atemporal-god-and-time-as-interface.md", "boethius-consolation-foreknowledge-eternal-present.md"]},
+    {"id": "q09", "type": "semantic", "query": "what would it actually take for a machine to be a person rather than a processor", "gold": ["2026-08-24_ai-personhood-aquinas-separated-soul.md", "bearer-theory-metaphysical-roots.md"]},
+    {"id": "q10", "type": "semantic", "query": "the ladder of knowing: sense then imagination then reason then pure intellect", "gold": ["2026-04-26_boethian-hierarchy-of-knowing.md", "seven-levels-life-before-language.md"]},
+    {"id": "q11", "type": "ident", "query": "the formal pair b_t = (theta_t, m_t)", "gold": ["2026-07-14_two-triangles-operational-mapping-state-space-pivot.md", "bearer_theory_proposed_insertions.md"]},
+    {"id": "q12", "type": "ident", "query": "DEF-001 through DEF-010 definitions with the trajectory theorem", "gold": ["2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md", "life_before_language_arxiv_draft_v0_2.md"]},
+    {"id": "q13", "type": "semantic", "query": "suspending all judgment about how things really are brings unexpected peace", "gold": ["pyrrhonism-epoche-ataraxia.md", "2026-10-08_pyrrhonism-explained.md"]},
+    {"id": "q14", "type": "semantic", "query": "a sentence about itself that cannot be true or false, and the hierarchy that fixes it", "gold": ["2026-08-31_epimenides-tarski-strange-loops-geb.md", "geb-reductionistic-faith-levels-isomorphism.md"]},
+    {"id": "q15", "type": "semantic", "query": "property is not natural; it is an authority structure between the person and the sovereign", "gold": ["property-intermediate-authority-map.md", "2026-09-07_property-freedom-sheen-map.md", "2026-09-03_hobbes-property-mine-and-thine.md"]},
+    {"id": "q16", "type": "multi", "query": "the gospel that was scripture in exactly one church and nowhere else", "gold": ["jesus-attestation-corpus.md", "lbl_proposed_additions.md"]},
+    {"id": "q17", "type": "multi", "query": "counting surviving manuscripts does not multiply independent witnesses", "gold": ["jesus-attestation-corpus.md", "psd_proposed_revisions.md"]},
+    {"id": "q18", "type": "semantic", "query": "the wall where regulation never changes the constitution of the thing regulated", "gold": ["descent-vs-modulation-constitution-change.md", "seven-levels-life-before-language.md"]},
+    {"id": "q19", "type": "multi", "query": "grown-in structure versus bolted-on retrofit, proved by construction order in trained models", "gold": ["l5_friction_flow_construction_order.md", "l5_program_findings.md", "bearer_theory_proposed_insertions_part2.md"]},
+    {"id": "q20", "type": "semantic", "query": "reasoning as reckoning of sequences versus carrying a person in your name", "gold": ["2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md", "hobbes-science-tree-fact-vs-consequence.md"]},
+    {"id": "q21", "type": "semantic", "query": "the will that wants both what it wants and its own undoing, at the stillest hour", "gold": ["2026-08-30_nietzsche-double-will-stillest-hour.md"]},
+    {"id": "q22", "type": "semantic", "query": "bold competence riding fortune versus the fortress that fortune removes", "gold": ["2026-10-11_machiavelli-analysis.md", "fortuna-virtu-possession-vs-capacity.md"]},
+    {"id": "q23", "type": "semantic", "query": "searching for God inside the storage room of one's own memory", "gold": ["2026-10-12_augustine-memory-analysis.md", "augustine-book-x-illumination-grace.md"]},
+    {"id": "q24", "type": "semantic", "query": "an ever-maintained compiled wiki beats re-retrieving fragments for every question", "gold": ["llm-wiki-pattern.md", "fttf_holographic_rag_paper.md"]}
+  ]
+}

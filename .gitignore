@@ -21,3 +21,5 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+bench_store/
+bench/dense_embeddings.json

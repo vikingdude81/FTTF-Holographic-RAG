@@ -1,0 +1,1362 @@
+{
+ "date": "2026-10-27",
+ "n_queries": 24,
+ "corpus_docs": 101,
+ "systems": {
+  "fttf_search": {
+   "recall@5": 0.875,
+   "recall@10": 0.958,
+   "MRR@10": 0.687,
+   "per_query": {
+    "q01": {
+     "top5": [
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "political-authority-boundary-worth.md",
+      "property-intermediate-authority-map.md",
+      "pelagianism-grace-vs-moral-capacity.md",
+      "descartes-clear-good-will.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q02": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "bearer-theory-augustine-bridge.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "rationalist-vs-empirist-epistemology-lineage.md",
+      "scupoli-distrust-self-unaided-will.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q03": {
+     "top5": [
+      "coerced-belief-and-legitimacy.md",
+      "hobbes-leviathan-mortal-god.md",
+      "descent-vs-modulation-constitution-change.md",
+      "hobbes-threefold-word-prophecy.md",
+      "political-authority-boundary-worth.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q04": {
+     "top5": [
+      "descent-vs-modulation-constitution-change.md",
+      "convergence_paper_draft.md",
+      "pelagianism-grace-vs-moral-capacity.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "2026-07-08_life-before-language-paper-retrofit-asymmetry.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q05": {
+     "top5": [
+      "pelagianism-grace-vs-moral-capacity.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "descartes-clear-good-will.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "political-authority-boundary-worth.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q06": {
+     "top5": [
+      "2026-08-19_marx-smith-kendall-book-pages.md",
+      "marx-book-hegelianism-to-communism.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-09-06_ordered-love-pol-pot-augustine.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q07": {
+     "top5": [
+      "hobbes-leviathan-mortal-god.md",
+      "thiel-girard-antichrist-stagnation.md",
+      "hobbes-threefold-word-prophecy.md",
+      "2026-10-06_hobbes-theology-insights.md",
+      "hobbes-science-tree-fact-vs-consequence.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q08": {
+     "top5": [
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "augustine-time-distentio-animi.md",
+      "2026-09-20_god-time-faith.md",
+      "atemporal-god-and-time-as-interface.md",
+      "bearer-coordination-shared-reference.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q09": {
+     "top5": [
+      "convergence_paper_draft.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "convergence_paper_outline.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "l5_memory_construction_order_report.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q10": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "rationalist-vs-empirist-epistemology-lineage.md",
+      "aimt-philosophy-roots-of-ai.md",
+      "descartes-clear-good-will.md",
+      "hobbes-science-tree-fact-vs-consequence.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q11": {
+     "top5": [
+      "bearer-theory-metaphysical-roots.md",
+      "constitutive_gpt_addendum.md",
+      "fourd_bearer_bridge.md",
+      "README.md",
+      "fourd_bearer_bifurcation_paper_draft.md"
+     ],
+     "hit5": false,
+     "rank_best": 7
+    },
+    "q12": {
+     "top5": [
+      "fourd_bearer_bridge.md",
+      "constitutive_gpt_addendum.md",
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "bearer-theory-metaphysical-roots.md",
+      "convergence_paper_outline.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q13": {
+     "top5": [
+      "political-authority-boundary-worth.md",
+      "augustine-time-distentio-animi.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "2026-09-10_scupoli-distrust-of-self.md"
+     ],
+     "hit5": false,
+     "rank_best": null
+    },
+    "q14": {
+     "top5": [
+      "2026-08-31_epimenides-tarski-strange-loops-geb.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "descent-vs-modulation-constitution-change.md",
+      "convergence_paper_draft.md",
+      "political-authority-boundary-worth.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q15": {
+     "top5": [
+      "property-intermediate-authority-map.md",
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "descent-vs-modulation-constitution-change.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q16": {
+     "top5": [
+      "augustine-confessions-i-impassible-affections.md",
+      "hobbes-threefold-word-prophecy.md",
+      "jesus-attestation-corpus.md",
+      "platonist-descent-gap.md",
+      "2026-09-09_christianity-communism.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q17": {
+     "top5": [
+      "lbl_proposed_additions.md",
+      "jesus-attestation-corpus.md",
+      "augustine-time-distentio-animi.md",
+      "bearer-coordination-shared-reference.md",
+      "bearer_theory_proposed_insertions_part2.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q18": {
+     "top5": [
+      "political-authority-boundary-worth.md",
+      "descent-vs-modulation-constitution-change.md",
+      "property-intermediate-authority-map.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "seven-levels-life-before-language.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q19": {
+     "top5": [
+      "l5_memory_construction_order_report.md",
+      "convergence_paper_draft.md",
+      "constitutive_gpt_addendum.md",
+      "l5_program_findings.md",
+      "convergence_paper_outline.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q20": {
+     "top5": [
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "bearer-coordination-shared-reference.md",
+      "convergence_paper_draft.md",
+      "constitutive_gpt_addendum.md",
+      "hobbes-science-tree-fact-vs-consequence.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q21": {
+     "top5": [
+      "scupoli-distrust-self-unaided-will.md",
+      "political-authority-boundary-worth.md",
+      "augustine-time-distentio-animi.md",
+      "augustine-confessions-i-impassible-affections.md",
+      "fortuna-virtu-possession-vs-capacity.md"
+     ],
+     "hit5": false,
+     "rank_best": 6
+    },
+    "q22": {
+     "top5": [
+      "medieval-media-patron-authority.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "descent-vs-modulation-constitution-change.md",
+      "convergence_paper_draft.md",
+      "descartes-clear-good-will.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q23": {
+     "top5": [
+      "2026-10-12_augustine-memory-analysis.md",
+      "augustine-time-distentio-animi.md",
+      "2026-09-10_prophecy-threefold-word.md",
+      "2026-02_extra-dimensions-lgi-genesis.md",
+      "2026-10-04_god-and-bearer-theory.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q24": {
+     "top5": [
+      "llm-wiki-pattern.md",
+      "2026-10-08_pyrrhonism-explained.md",
+      "boethius-sufficientia-five-goods-false-happiness.md",
+      "knowledge-fragmentation-ai-bridge.md",
+      "augustine-time-distentio-animi.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    }
+   }
+  },
+  "fttf_keyword": {
+   "recall@5": 0.917,
+   "recall@10": 1.0,
+   "MRR@10": 0.637,
+   "per_query": {
+    "q01": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "2026-10-05_pelagianism-explained.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "epistemic-modesty-common-life-limits.md",
+      "2026-09-10_scupoli-distrust-of-self.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q02": {
+     "top5": [
+      "bearer-theory-metaphysical-roots.md",
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "epistemic-modesty-common-life-limits.md",
+      "augustine-book-x-illumination-grace.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q03": {
+     "top5": [
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "hobbes-threefold-word-prophecy.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "political-authority-boundary-worth.md",
+      "marx-book-hegelianism-to-communism.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q04": {
+     "top5": [
+      "2026-09-02_theological-reasoning-debate-boethius-value.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-09-09_christianity-communism.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-09-01_hobbes-stone-analogy-complaisance.md"
+     ],
+     "hit5": false,
+     "rank_best": 7
+    },
+    "q05": {
+     "top5": [
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "2026-10-04_god-and-bearer-theory.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-10-05_pelagianism-explained.md",
+      "descartes-clear-good-will.md"
+     ],
+     "hit5": false,
+     "rank_best": 6
+    },
+    "q06": {
+     "top5": [
+      "2026-08-19_marx-smith-kendall-book-pages.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "property-intermediate-authority-map.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "marx-book-hegelianism-to-communism.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q07": {
+     "top5": [
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "2026-10-06_hobbes-theology-insights.md",
+      "boethius-sufficientia-five-goods-false-happiness.md",
+      "hobbes-leviathan-mortal-god.md",
+      "seven-seals-vs-seven-levels.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q08": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "augustine-time-distentio-animi.md",
+      "atemporal-god-and-time-as-interface.md",
+      "2026-09-20_god-time-faith.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q09": {
+     "top5": [
+      "2026-09-02_theological-reasoning-debate-boethius-value.md",
+      "2026-07-14_two-triangles-operational-mapping-state-space-pivot.md",
+      "pelagianism-grace-vs-moral-capacity.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q10": {
+     "top5": [
+      "bearer-theory-metaphysical-roots.md",
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "life_before_language_working_notes_v2.md",
+      "2026-04-26_boethian-hierarchy-of-knowing.md"
+     ],
+     "hit5": true,
+     "rank_best": 5
+    },
+    "q11": {
+     "top5": [
+      "2026-07-14_two-triangles-operational-mapping-state-space-pivot.md",
+      "2026-07-19_substrate-vs-higher-organization-layered-intelligence.md",
+      "constitutive_gpt_addendum.md",
+      "bearer_theory_experiment_mapping.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q12": {
+     "top5": [
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "bearer-theory-metaphysical-roots.md",
+      "README.md",
+      "2026-07-12_ai-theory-philosophy-canonical-docs-sediment.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q13": {
+     "top5": [
+      "2026-10-08_pyrrhonism-explained.md",
+      "pyrrhonism-epoche-ataraxia.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "2026-10-06_hobbes-theology-insights.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q14": {
+     "top5": [
+      "2026-08-31_epimenides-tarski-strange-loops-geb.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-07-08_life-before-language-paper-retrofit-asymmetry.md",
+      "2026-08-21_ordo-amoris-alignment-measure-stirner.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q15": {
+     "top5": [
+      "property-intermediate-authority-map.md",
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-09-03_aristotle-submission-women-marriage.md",
+      "political-authority-boundary-worth.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q16": {
+     "top5": [
+      "lbl_proposed_additions.md",
+      "jesus-attestation-corpus.md",
+      "property-intermediate-authority-map.md",
+      "2026-08-27_biblical-critique-inference-tactics.md",
+      "2026-10-06_hobbes-theology-insights.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q17": {
+     "top5": [
+      "psd_proposed_revisions.md",
+      "jesus-attestation-corpus.md",
+      "bearer_theory_proposed_insertions_part2.md",
+      "lbl_proposed_additions.md",
+      "convergence_paper_outline.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q18": {
+     "top5": [
+      "life_before_language_arxiv_draft_v0_2.md",
+      "descent-vs-modulation-constitution-change.md",
+      "seven-levels-life-before-language.md",
+      "2026-07-12_ai-theory-philosophy-canonical-docs-sediment.md",
+      "2026-07-14_two-triangles-operational-mapping-state-space-pivot.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q19": {
+     "top5": [
+      "l5_memory_construction_order_report.md",
+      "bearer_theory_proposed_insertions_part2.md",
+      "paper3_outline_memory_stratum.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "seven-levels-life-before-language.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q20": {
+     "top5": [
+      "hobbes-science-tree-fact-vs-consequence.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-10-06_hobbes-theology-insights.md",
+      "hobbes-leviathan-mortal-god.md",
+      "2026-09-09_christianity-communism.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q21": {
+     "top5": [
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "2026-09-03_aristotle-submission-women-marriage.md",
+      "2026-10-05_pelagianism-explained.md",
+      "2026-09-09_medieval-media-consumption.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q22": {
+     "top5": [
+      "fortuna-virtu-possession-vs-capacity.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "medieval-media-patron-authority.md",
+      "2026-09-09_medieval-media-consumption.md",
+      "2026-09-02_theological-reasoning-debate-boethius-value.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q23": {
+     "top5": [
+      "paper3_outline_memory_stratum.md",
+      "l5_memory_construction_order_report.md",
+      "2026-09-20_god-time-faith.md",
+      "l5_program_findings.md",
+      "augustine-book-x-illumination-grace.md"
+     ],
+     "hit5": true,
+     "rank_best": 5
+    },
+    "q24": {
+     "top5": [
+      "llm-wiki-pattern.md",
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "paper2_outline_assigned_residue.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "jesus-attestation-corpus.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    }
+   }
+  },
+  "fttf_hybrid": {
+   "recall@5": 1.0,
+   "recall@10": 1.0,
+   "MRR@10": 0.816,
+   "per_query": {
+    "q01": {
+     "top5": [
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "2026-10-05_pelagianism-explained.md",
+      "epistemic-modesty-common-life-limits.md",
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "2026-09-07_property-freedom-sheen-map.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q02": {
+     "top5": [
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "bearer-theory-metaphysical-roots.md",
+      "augustine-book-x-illumination-grace.md",
+      "2026-04-26_boethian-hierarchy-of-knowing.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q03": {
+     "top5": [
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "hobbes-threefold-word-prophecy.md",
+      "political-authority-boundary-worth.md",
+      "descent-vs-modulation-constitution-change.md",
+      "coerced-belief-and-legitimacy.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q04": {
+     "top5": [
+      "descent-vs-modulation-constitution-change.md",
+      "2026-09-02_theological-reasoning-debate-boethius-value.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-09-09_christianity-communism.md",
+      "2026-09-01_hobbes-stone-analogy-complaisance.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q05": {
+     "top5": [
+      "descartes-clear-good-will.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "2026-10-05_pelagianism-explained.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q06": {
+     "top5": [
+      "2026-08-19_marx-smith-kendall-book-pages.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "marx-book-hegelianism-to-communism.md",
+      "property-intermediate-authority-map.md",
+      "2026-09-07_property-freedom-sheen-map.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q07": {
+     "top5": [
+      "hobbes-leviathan-mortal-god.md",
+      "2026-10-06_hobbes-theology-insights.md",
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "boethius-sufficientia-five-goods-false-happiness.md",
+      "hobbes-threefold-word-prophecy.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q08": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "augustine-time-distentio-animi.md",
+      "2026-09-20_god-time-faith.md",
+      "atemporal-god-and-time-as-interface.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q09": {
+     "top5": [
+      "convergence_paper_draft.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "2026-10-08_knowledge-fragmentation-ai-bridge.md",
+      "bearer-theory-metaphysical-roots.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q10": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "bearer-theory-metaphysical-roots.md",
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-02_albert-super-ethica-intellect-ai-mapping.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q11": {
+     "top5": [
+      "2026-07-14_two-triangles-operational-mapping-state-space-pivot.md",
+      "constitutive_gpt_addendum.md",
+      "2026-07-19_substrate-vs-higher-organization-layered-intelligence.md",
+      "bearer-theory-metaphysical-roots.md",
+      "bearer_theory_experiment_mapping.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q12": {
+     "top5": [
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "bearer-theory-metaphysical-roots.md",
+      "README.md",
+      "fourd_bearer_bridge.md",
+      "l5_friction_flow_construction_order.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q13": {
+     "top5": [
+      "pyrrhonism-epoche-ataraxia.md",
+      "2026-10-08_pyrrhonism-explained.md",
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "thiel-girard-antichrist-stagnation.md",
+      "2026-10-06_hobbes-theology-insights.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q14": {
+     "top5": [
+      "2026-08-31_epimenides-tarski-strange-loops-geb.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md",
+      "2026-09-21_partial-good-vs-good-boethius-iv.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-08-21_ordo-amoris-alignment-measure-stirner.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q15": {
+     "top5": [
+      "property-intermediate-authority-map.md",
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "political-authority-boundary-worth.md",
+      "2026-09-03_aristotle-submission-women-marriage.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q16": {
+     "top5": [
+      "lbl_proposed_additions.md",
+      "jesus-attestation-corpus.md",
+      "augustine-confessions-i-impassible-affections.md",
+      "2026-09-10_prophecy-threefold-word.md",
+      "hobbes-leviathan-mortal-god.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q17": {
+     "top5": [
+      "jesus-attestation-corpus.md",
+      "lbl_proposed_additions.md",
+      "psd_proposed_revisions.md",
+      "bearer_theory_proposed_insertions_part2.md",
+      "convergence_paper_outline.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q18": {
+     "top5": [
+      "descent-vs-modulation-constitution-change.md",
+      "seven-levels-life-before-language.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "bearer-theory-metaphysical-roots.md",
+      "life_before_language_working_notes_v2.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q19": {
+     "top5": [
+      "l5_memory_construction_order_report.md",
+      "bearer_theory_proposed_insertions_part2.md",
+      "paper3_outline_memory_stratum.md",
+      "l5_program_findings.md",
+      "constitutive_gpt_addendum.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q20": {
+     "top5": [
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "hobbes-science-tree-fact-vs-consequence.md",
+      "2026-10-06_hobbes-theology-insights.md",
+      "2026-08-21_ordo-amoris-alignment-measure-stirner.md",
+      "hobbes-leviathan-mortal-god.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q21": {
+     "top5": [
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "augustine-time-distentio-animi.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "2026-09-10_scupoli-distrust-of-self.md",
+      "political-authority-boundary-worth.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q22": {
+     "top5": [
+      "medieval-media-patron-authority.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "2026-09-09_medieval-media-consumption.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "convergence_paper_draft.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q23": {
+     "top5": [
+      "paper3_outline_memory_stratum.md",
+      "l5_memory_construction_order_report.md",
+      "2026-09-20_god-time-faith.md",
+      "augustine-book-x-illumination-grace.md",
+      "2026-10-12_augustine-memory-analysis.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q24": {
+     "top5": [
+      "llm-wiki-pattern.md",
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "knowledge-fragmentation-ai-bridge.md",
+      "2026-02_extra-dimensions-lgi-genesis.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    }
+   }
+  },
+  "dense_nomic": {
+   "recall@5": 0.917,
+   "recall@10": 1.0,
+   "MRR@10": 0.626,
+   "per_query": {
+    "q01": {
+     "top5": [
+      "property-intermediate-authority-map.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "pelagianism-grace-vs-moral-capacity.md",
+      "political-authority-boundary-worth.md",
+      "epistemic-modesty-common-life-limits.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q02": {
+     "top5": [
+      "bearer-theory-augustine-bridge.md",
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "rationalist-vs-empirist-epistemology-lineage.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "scupoli-distrust-self-unaided-will.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q03": {
+     "top5": [
+      "coerced-belief-and-legitimacy.md",
+      "hobbes-leviathan-mortal-god.md",
+      "hobbes-threefold-word-prophecy.md",
+      "property-intermediate-authority-map.md",
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q04": {
+     "top5": [
+      "descent-vs-modulation-constitution-change.md",
+      "convergence_paper_draft.md",
+      "pelagianism-grace-vs-moral-capacity.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "scupoli-distrust-self-unaided-will.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q05": {
+     "top5": [
+      "descartes-clear-good-will.md",
+      "pelagianism-grace-vs-moral-capacity.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "property-intermediate-authority-map.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q06": {
+     "top5": [
+      "2026-08-19_marx-smith-kendall-book-pages.md",
+      "marx-book-hegelianism-to-communism.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "2026-09-06_ordered-love-pol-pot-augustine.md",
+      "2026-09-07_property-freedom-sheen-map.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q07": {
+     "top5": [
+      "hobbes-leviathan-mortal-god.md",
+      "hobbes-threefold-word-prophecy.md",
+      "thiel-girard-antichrist-stagnation.md",
+      "2026-10-06_hobbes-theology-insights.md",
+      "hobbes-science-tree-fact-vs-consequence.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q08": {
+     "top5": [
+      "augustine-time-distentio-animi.md",
+      "2026-09-20_god-time-faith.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "atemporal-god-and-time-as-interface.md",
+      "bearer-coordination-shared-reference.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q09": {
+     "top5": [
+      "convergence_paper_draft.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "convergence_paper_outline.md",
+      "l5_memory_construction_order_report.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q10": {
+     "top5": [
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "rationalist-vs-empirist-epistemology-lineage.md",
+      "aimt-philosophy-roots-of-ai.md",
+      "2026-02_albert-super-ethica-intellect-ai-mapping.md",
+      "descartes-clear-good-will.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q11": {
+     "top5": [
+      "constitutive_gpt_addendum.md",
+      "README.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-07-14_two-triangles-operational-mapping-state-space-pivot.md",
+      "bearer-coordination-shared-reference.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q12": {
+     "top5": [
+      "constitutive_gpt_addendum.md",
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "bearer-theory-metaphysical-roots.md",
+      "fourd_bearer_bridge.md",
+      "augustine-time-distentio-animi.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q13": {
+     "top5": [
+      "augustine-time-distentio-animi.md",
+      "scupoli-distrust-self-unaided-will.md",
+      "political-authority-boundary-worth.md",
+      "boethius-consolation-foreknowledge-eternal-present.md",
+      "2026-09-10_scupoli-distrust-of-self.md"
+     ],
+     "hit5": false,
+     "rank_best": 7
+    },
+    "q14": {
+     "top5": [
+      "scupoli-distrust-self-unaided-will.md",
+      "2026-08-31_epimenides-tarski-strange-loops-geb.md",
+      "2026-04-26_boethian-hierarchy-of-knowing.md",
+      "2026-09-10_scupoli-distrust-of-self.md",
+      "descent-vs-modulation-constitution-change.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q15": {
+     "top5": [
+      "property-intermediate-authority-map.md",
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "political-authority-boundary-worth.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q16": {
+     "top5": [
+      "hobbes-threefold-word-prophecy.md",
+      "augustine-confessions-i-impassible-affections.md",
+      "jesus-attestation-corpus.md",
+      "platonist-descent-gap.md",
+      "2026-09-09_christianity-communism.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q17": {
+     "top5": [
+      "jesus-attestation-corpus.md",
+      "README.md",
+      "lbl_proposed_additions.md",
+      "bearer_theory_experiment_mapping.md",
+      "augustine-time-distentio-animi.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q18": {
+     "top5": [
+      "political-authority-boundary-worth.md",
+      "property-intermediate-authority-map.md",
+      "descent-vs-modulation-constitution-change.md",
+      "seven-levels-life-before-language.md",
+      "coerced-belief-and-legitimacy.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q19": {
+     "top5": [
+      "l5_memory_construction_order_report.md",
+      "l5_program_findings.md",
+      "constitutive_gpt_addendum.md",
+      "convergence_paper_draft.md",
+      "paper3_outline_memory_stratum.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q20": {
+     "top5": [
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "bearer-coordination-shared-reference.md",
+      "constitutive_gpt_addendum.md",
+      "convergence_paper_draft.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q21": {
+     "top5": [
+      "scupoli-distrust-self-unaided-will.md",
+      "augustine-time-distentio-animi.md",
+      "political-authority-boundary-worth.md",
+      "augustine-confessions-i-impassible-affections.md",
+      "property-intermediate-authority-map.md"
+     ],
+     "hit5": false,
+     "rank_best": 7
+    },
+    "q22": {
+     "top5": [
+      "medieval-media-patron-authority.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "descent-vs-modulation-constitution-change.md",
+      "descartes-clear-good-will.md",
+      "convergence_paper_draft.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q23": {
+     "top5": [
+      "2026-10-12_augustine-memory-analysis.md",
+      "augustine-time-distentio-animi.md",
+      "2026-02_extra-dimensions-lgi-genesis.md",
+      "2026-09-20_god-time-faith.md",
+      "l5_memory_construction_order_report.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q24": {
+     "top5": [
+      "llm-wiki-pattern.md",
+      "2026-10-08_pyrrhonism-explained.md",
+      "knowledge-fragmentation-ai-bridge.md",
+      "fourd_bearer_bifurcation_paper_draft.md",
+      "boethius-sufficientia-five-goods-false-happiness.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    }
+   }
+  },
+  "grep_naive": {
+   "recall@5": 0.708,
+   "recall@10": 0.833,
+   "MRR@10": 0.589,
+   "per_query": {
+    "q01": {
+     "top5": [
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "2026-10-12_augustine-memory-analysis.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md"
+     ],
+     "hit5": false,
+     "rank_best": 8
+    },
+    "q02": {
+     "top5": [
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-10-12_augustine-memory-analysis.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "augustine-book-x-illumination-grace.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q03": {
+     "top5": [
+      "2026-09-06_hobbes-divine-law-prophecy-epistemology.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md"
+     ],
+     "hit5": false,
+     "rank_best": null
+    },
+    "q04": {
+     "top5": [
+      "convergence_paper_draft.md",
+      "2026-09-02_theological-reasoning-debate-boethius-value.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "paper2_outline_assigned_residue.md"
+     ],
+     "hit5": false,
+     "rank_best": null
+    },
+    "q05": {
+     "top5": [
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-09-09_medieval-media-consumption.md",
+      "descartes-clear-good-will.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md"
+     ],
+     "hit5": true,
+     "rank_best": 5
+    },
+    "q06": {
+     "top5": [
+      "2026-08-19_marx-smith-kendall-book-pages.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "property-intermediate-authority-map.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q07": {
+     "top5": [
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-09-10_prophecy-threefold-word.md",
+      "property-intermediate-authority-map.md"
+     ],
+     "hit5": false,
+     "rank_best": null
+    },
+    "q08": {
+     "top5": [
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md",
+      "2026-10-12_augustine-memory-analysis.md",
+      "2026-09-10_prophecy-threefold-word.md",
+      "2026-08-21_ordo-amoris-alignment-measure-stirner.md",
+      "2026-08-27_biblical-critique-inference-tactics.md"
+     ],
+     "hit5": false,
+     "rank_best": null
+    },
+    "q09": {
+     "top5": [
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "convergence_paper_draft.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q10": {
+     "top5": [
+      "2026-02_albert-super-ethica-intellect-ai-mapping.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "boethius-book-v-mind-not-a-mirror-agent-intellect.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "life_before_language_working_notes_v2.md"
+     ],
+     "hit5": false,
+     "rank_best": 9
+    },
+    "q11": {
+     "top5": [
+      "2026-07-14_two-triangles-operational-mapping-state-space-pivot.md",
+      "2026-08-21_ordo-amoris-alignment-measure-stirner.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-07-21_boethius-passions-proto-affect-formalization.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q12": {
+     "top5": [
+      "2026-07-13_lbl-reference-manual-def001-010-trajectory-theorem.md",
+      "bearer-theory-metaphysical-roots.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-07-08_life-before-language-paper-retrofit-asymmetry.md",
+      "paper2_outline_assigned_residue.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q13": {
+     "top5": [
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-10-12_augustine-memory-analysis.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md"
+     ],
+     "hit5": false,
+     "rank_best": 8
+    },
+    "q14": {
+     "top5": [
+      "2026-08-31_epimenides-tarski-strange-loops-geb.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md",
+      "2026-08-21_ordo-amoris-alignment-measure-stirner.md",
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q15": {
+     "top5": [
+      "2026-09-07_property-freedom-sheen-map.md",
+      "2026-08-30_marx-proudhon-property-genealogy.md",
+      "property-intermediate-authority-map.md",
+      "2026-09-03_hobbes-property-mine-and-thine.md",
+      "2026-09-09_medieval-media-consumption.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q16": {
+     "top5": [
+      "lbl_proposed_additions.md",
+      "2026-08-27_biblical-critique-inference-tactics.md",
+      "jesus-attestation-corpus.md",
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "life_before_language_arxiv_draft_v0_2.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q17": {
+     "top5": [
+      "psd_proposed_revisions.md",
+      "jesus-attestation-corpus.md",
+      "bearer_theory_proposed_insertions_part2.md",
+      "lbl_proposed_additions.md",
+      "fourd_bearer_bifurcation_paper_draft.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q18": {
+     "top5": [
+      "life_before_language_arxiv_draft_v0_2.md",
+      "bearer_theory_experiment_mapping.md",
+      "cca_second_substrate_writeup.md",
+      "descent-vs-modulation-constitution-change.md",
+      "bearer-theory-metaphysical-roots.md"
+     ],
+     "hit5": true,
+     "rank_best": 4
+    },
+    "q19": {
+     "top5": [
+      "life_before_language_arxiv_draft_v0_2.md",
+      "bearer_theory_proposed_insertions_part2.md",
+      "convergence_paper_draft.md",
+      "paper3_outline_memory_stratum.md",
+      "constitutive_gpt_addendum.md"
+     ],
+     "hit5": true,
+     "rank_best": 2
+    },
+    "q20": {
+     "top5": [
+      "2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md",
+      "2026-08-24_ai-personhood-aquinas-separated-soul.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "hobbes-science-tree-fact-vs-consequence.md",
+      "convergence_paper_draft.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q21": {
+     "top5": [
+      "2026-08-30_nietzsche-double-will-stillest-hour.md",
+      "2026-09-09_medieval-media-consumption.md",
+      "2026-10-11_machiavelli-analysis.md",
+      "convergence_paper_draft.md",
+      "fourd_bearer_bifurcation_paper_draft.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q22": {
+     "top5": [
+      "2026-10-11_machiavelli-analysis.md",
+      "2026-09-09_medieval-media-consumption.md",
+      "medieval-media-patron-authority.md",
+      "fortuna-virtu-possession-vs-capacity.md",
+      "2026-09-02_theological-reasoning-debate-boethius-value.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    },
+    "q23": {
+     "top5": [
+      "paper3_outline_memory_stratum.md",
+      "2026-08-20_augustine-confessions-vii-grace-restoration.md",
+      "2026-10-12_augustine-memory-analysis.md",
+      "convergence_paper_draft.md",
+      "fttf_holographic_rag_paper.md"
+     ],
+     "hit5": true,
+     "rank_best": 3
+    },
+    "q24": {
+     "top5": [
+      "llm-wiki-pattern.md",
+      "life_before_language_arxiv_draft_v0_2.md",
+      "fourd_bearer_bifurcation_paper_draft.md",
+      "2026-09-07_property-freedom-sheen-map.md",
+      "constitutive_gpt_addendum.md"
+     ],
+     "hit5": true,
+     "rank_best": 1
+    }
+   }
+  }
+ }
+}
