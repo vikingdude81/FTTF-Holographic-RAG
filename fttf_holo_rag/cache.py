@@ -104,12 +104,37 @@ def wait_for_ollama(cfg: HoloConfig) -> bool:
 # Mtime-Based Invalidation
 # ─────────────────────────────────────────────────────────────
 
+def _get_all(coll, include, max_docs: int = 60_000, batch: int = 1000) -> dict:
+    """Batched coll.get() up to max_docs.
+
+    A single get() with a large limit fails on big collections
+    ("too many SQL variables" from SQLite), which previously crashed the
+    rebuild path and silently downgraded mtime_hash to a bare count.
+    """
+    out = {'ids': [], 'metadatas': [], 'embeddings': [], 'documents': []}
+    offset = 0
+    while offset < max_docs:
+        data = coll.get(include=include, limit=min(batch, max_docs - offset), offset=offset)
+        got = data.get('ids') or []
+        if not got:
+            break
+        out['ids'] += got
+        for key in include:
+            if key == 'ids':
+                continue
+            vals = data.get(key)
+            if vals is not None:
+                out[key].extend(list(vals))
+        offset += len(got)
+    return out
+
+
 def mtime_hash(coll, max_docs: int = 60_000) -> str:
-    """Build a fingerprint of the collection using metadata timestamps."""
+    """Build a fingerprint of the collection using metadata timestamps (batched)."""
     try:
-        data = coll.get(include=['metadatas'], limit=max_docs)
+        data = _get_all(coll, ['metadatas'], max_docs)
         mtimes = sorted(
-            str(m.get('mtime', m.get('last_modified', '')))
+            str((m or {}).get('mtime', (m or {}).get('last_modified', '')))
             for m in data['metadatas']
         )
         combined = f"{len(data['ids'])}|{'|'.join(mtimes)}"
@@ -234,7 +259,7 @@ class HoloCache:
 
         raw_embs = None
         try:
-            all_data = coll.get(include=['metadatas', 'embeddings'], limit=cfg.max_docs)
+            all_data = _get_all(coll, ['metadatas', 'embeddings'], cfg.max_docs)
             raw_embs = all_data.get('embeddings') or []
             if not raw_embs or all(e is None for e in raw_embs):
                 raw_embs = None
@@ -245,7 +270,7 @@ class HoloCache:
             if not self._ensure_ollama():
                 log.error('[HOLO] Skipping — Ollama unreachable.')
                 return
-            all_data = coll.get(include=['metadatas', 'documents'], limit=cfg.max_docs)
+            all_data = _get_all(coll, ['metadatas', 'documents'], cfg.max_docs)
             log.info('[HOLO] Re-embedding %d documents via Ollama...', len(all_data['ids']))
             ollama_ef = embedding_functions.OllamaEmbeddingFunction(
                 url=cfg.ollama_url, model_name=cfg.embed_model,

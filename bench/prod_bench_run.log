@@ -1,0 +1,29 @@
+loading signed holo cache ...
+cache: 217 projects in 7.1s
+loading chroma collection (flat baselines) ...
+chroma: 55951 docs in 7.5s
+[lpf-gex] done
+[lpf-snap] done
+[hfc-topo] done
+[hfc-iit] done
+[cet-epi] done
+[fttf-holo] done
+[bitnet] done
+[ggml] done
+[auxrng] done
+[qrng-batt] done
+[qrng-cmp] done
+[helios-chaos] done
+[lfactory] done
+[crypto] done
+[agents] done
+[lgi] done
+[stale-newton] done
+
+=== PROD BENCH: 16 scored queries over 217 projects / 55951 docs ===
+system   | route@1 | route@3 | filehit@10 | median lat
+holo     | 3/16   | 9/16   | 1/9        | 2100 ms
+dense    | 8/16   | 12/16   | 1/9        | 2087 ms
+bm25     | 7/16   | 13/16   | 6/9        | 157 ms
+hybrid   | 8/16   | 14/16   | 6/9        | 2468 ms
+saved bench/prod_results.json

@@ -1,0 +1,19 @@
+{
+  "note": "BLIND round-2 gold: queries written as user questions, deliberately NOT using exact title/term wording, NOT derived from the link graph. Gold = docs whose content answers the question (verified against known archive content from curation sessions). scored:false = negative probes with no answer in corpus (not counted in metrics; top5 recorded for inspection).",
+  "queries": [
+    {"id": "blind-descent", "query": "can you change your nature just by changing what you believe, or does the change have to come down through the chain you descend from?", "gold": ["topics/descent-vs-modulation-constitution-change.md", "chats/2026-07-08_life-before-language-paper-retrofit-asymmetry.md"]},
+    {"id": "blind-boethius-foreknow", "query": "does God's foreknowledge destroy free will, or does eternity see every moment in one present?", "gold": ["topics/boethius-consolation-foreknowledge-eternal-present.md", "chats/2026-04-26_boethian-hierarchy-of-knowing.md"]},
+    {"id": "blind-copycount", "query": "how many independent witnesses are there if the same manuscript survives in five hundred copies?", "gold": ["topics/jesus-attestation-corpus.md"]},
+    {"id": "blind-pelagian", "query": "grace as capacity versus pulling yourself up by moral effort, the old heresy of unaided will", "gold": ["topics/pelagianism-grace-vs-moral-capacity.md", "chats/2026-10-05_pelagianism-explained.md", "topics/scupoli-distrust-self-unaided-will.md"]},
+    {"id": "blind-hobbes-reckoning", "query": "hobbes says reasoning is addition and subtraction, so what actually gets carried when words circulate between people?", "gold": ["chats/2026-08-27_hobbes-ratiocinatio-reckoning-vs-bearing.md", "topics/hobbes-science-tree-fact-vs-consequence.md"]},
+    {"id": "blind-aristotle-women", "query": "aristotle's argument that women and natural slaves lack the deliberative faculty, and its submission politics", "gold": ["chats/2026-09-03_aristotle-submission-women-marriage.md"]},
+    {"id": "blind-liar-loop", "query": "the cretan liar, tarski's hierarchy, and strange loops, why can't a system ground its own truth?", "gold": ["chats/2026-08-31_epimenides-tarski-strange-loops-geb.md", "topics/geb-reductionistic-faith-levels-isomorphism.md"]},
+    {"id": "blind-pyrrhon", "query": "suspending judgment brings tranquility, the ancient escape from infinite regress in justification", "gold": ["topics/pyrrhonism-epoche-ataraxia.md", "chats/2026-10-08_pyrrhonism-explained.md"]},
+    {"id": "blind-ordo", "query": "love rightly ordered as an alignment measure, and egoism with no self left to be selfish about", "gold": ["chats/2026-08-21_ordo-amoris-alignment-measure-stirner.md", "chats/2026-09-06_ordered-love-pol-pot-augustine.md"]},
+    {"id": "blind-personhood", "query": "is a language model a person? subsistence, rational supposit, completeness, and why retrieval is not personal continuity", "gold": ["chats/2026-08-24_ai-personhood-aquinas-separated-soul.md"]},
+    {"id": "blind-mediamap", "query": "printing, patronage, and preaching: who controls what a text means then and now", "gold": ["topics/medieval-media-patron-authority.md", "chats/2026-09-09_medieval-media-consumption.md"]},
+    {"id": "blind-propertymap", "query": "property as a map of intermediate authorities, the distributist chart against marx's genealogy of property", "gold": ["chats/2026-09-07_property-freedom-sheen-map.md", "chats/2026-08-30_marx-proudhon-property-genealogy.md", "topics/property-intermediate-authority-map.md"]},
+    {"id": "neg-k8s", "query": "rollback strategy for a helm chart upgrade on kubernetes", "gold": [], "scored": false},
+    {"id": "neg-sourdough", "query": "what hydration percentage works best for sourdough bread", "gold": [], "scored": false}
+  ]
+}

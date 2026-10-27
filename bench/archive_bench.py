@@ -18,8 +18,11 @@ from fttf_holo_rag.search import HoloRAG
 import chromadb
 import requests
 
-gold_doc = json.load(open(os.path.join(ROOT, "bench", "gold.json"), encoding="utf-8"))
+gold_path = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "bench", "gold.json")
+out_path = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, "bench", "results_2026-10-27.json")
+gold_doc = json.load(open(gold_path, encoding="utf-8"))
 QUERIES = gold_doc["queries"]
+SCORED = [Q for Q in QUERIES if Q.get("scored", True)]
 
 cfg = HoloConfig(chroma_path=STORE, chroma_collection="archive_bench",
                  holo_cache_path=os.path.join(STORE, "holo_cache.pkl"),
@@ -124,13 +127,13 @@ for name, fn in SYSTEMS.items():
             if d in gold:
                 rr = 1.0 / r
                 break
-        rec5 += hit5; rec10 += hit10; mrr_sum += rr
+        rec5 += hit5 and Q.get("scored", True); rec10 += hit10 and Q.get("scored", True); mrr_sum += rr if Q.get("scored", True) else 0.0
         per_q[Q["id"]] = {"top5": top5[:5], "hit5": hit5, "rank_best": (next((r for r, d in enumerate(top10, 1) if d in gold), None))}
-    n = len(QUERIES)
+    n = len(SCORED)
     results[name] = {"recall@5": round(rec5/n, 3), "recall@10": round(rec10/n, 3),
                      "MRR@10": round(mrr_sum/n, 3), "per_query": per_q}
     print(f"{name:14s} recall@5={rec5/n:.3f}  recall@10={rec10/n:.3f}  MRR@10={mrr_sum/n:.3f}")
 
-out = {"date": "2026-10-27", "n_queries": len(QUERIES), "corpus_docs": len(ids), "systems": results}
-json.dump(out, open(os.path.join(ROOT, "bench", "results_2026-10-27.json"), "w"), indent=1)
-print("\nwrote bench/results_2026-10-27.json")
+out = {"date": "2026-10-27", "gold_file": os.path.basename(gold_path), "n_queries": n, "corpus_docs": len(ids), "systems": results}
+json.dump(out, open(out_path, "w"), indent=1)
+print(f"\nwrote {out_path}")

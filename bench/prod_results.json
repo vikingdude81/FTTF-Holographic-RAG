@@ -1,0 +1,1180 @@
+{
+ "summary": {
+  "holo": {
+   "route1": 3,
+   "route3": 9,
+   "filehit": 1,
+   "nfileq": 9,
+   "median_ms": 2100
+  },
+  "dense": {
+   "route1": 8,
+   "route3": 12,
+   "filehit": 1,
+   "nfileq": 9,
+   "median_ms": 2087
+  },
+  "bm25": {
+   "route1": 7,
+   "route3": 13,
+   "filehit": 6,
+   "nfileq": 9,
+   "median_ms": 157
+  },
+  "hybrid": {
+   "route1": 8,
+   "route3": 14,
+   "filehit": 6,
+   "nfileq": 9,
+   "median_ms": 2468
+  }
+ },
+ "n_docs": 55951,
+ "n_projects": 217,
+ "queries": [
+  {
+   "id": "lpf-gex",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "SLV",
+     "LOCAL_Ai",
+     "lpf_pipeline"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "QUANT_GUIDE.md",
+     "QUANT_GUIDE.md",
+     "UPGRADE_SUMMARY.md",
+     "UPGRADE_SUMMARY.md",
+     "README.md"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "moon-dev-ai-agents-main",
+     "MERGE",
+     "LOCAL_Ai"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "GammaVolShift_strategy.txt",
+     "SABR_INTEGRATION_GUIDE.md",
+     "SABR_INTEGRATION_GUIDE.md",
+     "SABR_INTEGRATION_GUIDE.md",
+     "SABR_INTEGRATION_GUIDE.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "AI_Command_Center",
+     "LOCAL_Ai",
+     "lpf_pipeline"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "gex_vex.py",
+     "README.md",
+     "README.md",
+     "UPGRADE_SUMMARY.md",
+     "UPGRADE_SUMMARY.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "LOCAL_Ai",
+     "AI_Command_Center",
+     "lpf_pipeline"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "gex_vex.py",
+     "README.md",
+     "UPGRADE_SUMMARY.md",
+     "UPGRADE_SUMMARY.md"
+    ]
+   }
+  },
+  {
+   "id": "lpf-snap",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "AI-STOCK-AGENT-ANALYSIS-20-PRODUCTION",
+     "GRAPH-CHAOS-AI-production",
+     "polymarket-bayesian-trader"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "Pasted-That-clarification-helps-a-lot-If-you-re-looking-for-leveraged-exposure-without-options-or-liquida-1761248252517_1761248252518.txt",
+     "OPENBB_PHASE_3_4_5_COMPLETE.md",
+     "OPENBB_PHASE_3_4_5_COMPLETE.md",
+     "Pasted-The-document-introduces-LiveTradeBench-a-live-trading-environment-designed-to-evaluate-large-langua-1764518883996_1764518883997.txt",
+     "finrs_performance.json"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "moon-dev-ai-agents-main"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "T03_SqueezeBreakout_strategy.txt",
+     "ZephyrMomentum_strategy.txt",
+     "T09_SqueezeValidation_strategy.txt",
+     "VortexVwapSync_strategy.txt",
+     "VolCliffArbitrage_strategy.txt"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "LOCAL_Ai",
+     "claude-scientific-skills-main",
+     "moon-dev-ai-agents-main"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "test_advanced_analyzer_intraday.py",
+     "commodities.md",
+     "LiquidityCrush_strategy.txt",
+     "marketmaker.go",
+     "marketmaker.go"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "LOCAL_Ai",
+     "moon-dev-ai-agents-main",
+     "claude-scientific-skills-main"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "test_advanced_analyzer_intraday.py",
+     "VortexVwapSync_strategy.txt",
+     "commodities.md",
+     "marketmaker.go",
+     "marketmaker.go"
+    ]
+   }
+  },
+  {
+   "id": "hfc-topo",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "consciousness-emergence-agi",
+     "harmonic-field-consciousness",
+     "FTTF-fournier (1)"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "iteration_2_theoretical_foundation.md",
+     "iteration_2_synthesis.json",
+     "theoretical_foundation.py",
+     "README.md",
+     "README.md"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "harmonic-field-consciousness"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "advanced_networks.py",
+     "advanced_networks.py",
+     "2512.12135_barista.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "harmonic-field-consciousness"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "analyze_results.py",
+     "analyze_results.py",
+     "README.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "harmonic-field-consciousness"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "README.md",
+     "README.md",
+     "analyze_results.py"
+    ]
+   }
+  },
+  {
+   "id": "hfc-iit",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "Consciousnetics (1).pdf",
+     "Consciousnetics.pdf",
+     "consciousness-emergence-agi"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "Consciousnetics (1).pdf",
+     "Consciousnetics.pdf",
+     "iteration_2_theoretical_foundation.md",
+     "iteration_2_synthesis.json",
+     "theoretical_foundation.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "harmonic-field-consciousness",
+     "helios-trajectory-analysis",
+     "consciousness-emergence-testbed"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "graph_generators.py",
+     "graph_generators.py",
+     "README.md",
+     "README.md",
+     "README.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "harmonic-field-consciousness",
+     "consciousness-emergence-testbed",
+     "claude-scientific-skills"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "exp2_integration_differentiation.py",
+     "exp2_integration_differentiation.py",
+     "consciousness_fitness.py",
+     "SKILL.md",
+     "SKILL.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "harmonic-field-consciousness",
+     "consciousness-emergence-testbed",
+     "helios-trajectory-analysis"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "exp2_integration_differentiation.py",
+     "exp2_integration_differentiation.py",
+     "consciousness_fitness.py",
+     "README.md",
+     "README.md"
+    ]
+   }
+  },
+  {
+   "id": "cet-epi",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "QUANTUM-GENETICS",
+     "AI_Command_Center",
+     "QUANTUM-EXAMPLES"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "parallel_evolution.py",
+     "parallel_evolution.py",
+     "PERFORMANCE_OPTIMIZATION_SUMMARY.md",
+     "PERFORMANCE_OPTIMIZATION_SUMMARY.md",
+     "extreme_frontier_test.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "consciousness-emergence-testbed",
+     "helios-trajectory-analysis",
+     "qrng-analysis-toolkit"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "epiplexity_estimator.md",
+     "README.md",
+     "demo_epiplexity.py",
+     "epiplexity_estimator.py",
+     "epiplexity_estimator.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "consciousness-emergence-testbed",
+     "helios-trajectory-analysis",
+     "qrng-analysis-toolkit"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "epiplexity_estimator_testbed.py",
+     "epiplexity_estimator.md",
+     "test_helios_core.py",
+     "epiplexity_estimator.py",
+     "epiplexity_estimator.py"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "consciousness-emergence-testbed",
+     "qrng-analysis-toolkit",
+     "helios-trajectory-analysis"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "epiplexity_estimator.md",
+     "README.md",
+     "epiplexity_estimator_testbed.py",
+     "demo_epiplexity.py",
+     "epiplexity_estimator.py"
+    ]
+   }
+  },
+  {
+   "id": "fttf-holo",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "FTTF-fournier (1)",
+     "FTTF-fournier (2)",
+     "BitNet"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "PROJECT_MAP.md",
+     "replit.md",
+     "replit.md",
+     "multi_item_holographic_memory.py",
+     "__init__.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "FTTF-fournier (1)",
+     "FTTF-fournier (2)",
+     "AI_Command_Center"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "PROJECT_MAP.md",
+     "replit.md",
+     "replit.md",
+     "replit.md",
+     "test_scoped_search2.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "FTTF-fournier (1)",
+     "FTTF-fournier (2)",
+     "AI_Command_Center"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "replit.md",
+     "replit.md",
+     "replit.md",
+     "PROJECT_MAP.md",
+     "PROJECT_INTEL.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "FTTF-fournier (2)",
+     "FTTF-fournier (1)",
+     "crypto-ml-trading-system"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "replit.md",
+     "replit.md",
+     "replit.md",
+     "PROJECT_MAP.md",
+     "README.md"
+    ]
+   }
+  },
+  {
+   "id": "bitnet",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "NanoGPT",
+     "BitNet-main",
+     "BitNet"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "evaluate_model.py",
+     "evaluate_model.py",
+     "trm_train.py",
+     "trm_train.py",
+     "README.md"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "quantum-llama.cpp",
+     "LlamaFactory",
+     "hermes-agent-main"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "qwen2_7b_qlora.yaml",
+     "qwen2_7b_qlora.yaml",
+     "qwen3_lora_sft_otfq.yaml"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "hermes-agent-main",
+     "unsloth-main",
+     "LOCAL_Ai"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "quantization.md",
+     "alpaca_unsloth.json",
+     "GPU_ACCELERATION_ROADMAP.md",
+     "GPU_ACCELERATION_ROADMAP.md",
+     "GPU_ACCELERATION_ROADMAP.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "hermes-agent-main",
+     "BitNet",
+     "BitNet-main"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "quantization.md",
+     "README.md",
+     "README.md",
+     "README.md",
+     "alpaca_unsloth.json"
+    ]
+   }
+  },
+  {
+   "id": "ggml",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "quantum-llama.cpp",
+     "BitNet",
+     "BitNet-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "CANN.md",
+     "CANN.md",
+     "zDNN.md"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "quantum-llama.cpp",
+     "hermes-agent-main",
+     "BitNet-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "optimization.md",
+     "SKILL.md",
+     "README.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "quantum-llama.cpp",
+     "ollama-auxrng",
+     "vllm-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "developer.md",
+     "developer.md",
+     "backend.go",
+     "run-cpu-test-arm.sh",
+     "inference.py"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "quantum-llama.cpp",
+     "BitNet-main",
+     "BitNet"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "developer.md",
+     "developer.md",
+     "CANN.md",
+     "CANN.md",
+     "README.md"
+    ]
+   }
+  },
+  {
+   "id": "auxrng",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "entropic_bridge",
+     "infomeasure-main",
+     "BitNet-main"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "entropic_sampler.py",
+     "entropic_sampler.py",
+     "__init__.py",
+     "__init__.py",
+     "base.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "entropic_bridge",
+     "ollama-auxrng",
+     "qrng-analysis-toolkit"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "entropic_sampler.py",
+     "entropic_sampler.py",
+     "__init__.py",
+     "__init__.py",
+     "README.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "ollama-auxrng",
+     "entropic_bridge",
+     "hermes-agent-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "entropic_sampler.py",
+     "entropic_sampler.py",
+     "__init__.py",
+     "__init__.py"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "entropic_bridge",
+     "ollama-auxrng",
+     "quantum-llama.cpp"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "entropic_sampler.py",
+     "entropic_sampler.py",
+     "__init__.py",
+     "__init__.py",
+     "README.md"
+    ]
+   }
+  },
+  {
+   "id": "qrng-batt",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "entropic_bridge",
+     "helios-trajectory-analysis",
+     "harmonic-field-consciousness"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "summoning.py",
+     "summoning.py",
+     "prng.py",
+     "prng.py",
+     "__init__.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "quantum-llama.cpp",
+     "FourD",
+     "qrng-analysis-toolkit"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "qrng_monitor.py",
+     "qrng_monitor.py",
+     "entropy.py",
+     "test_qrng_quality.py",
+     "test_qrng_quality.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "helios-trajectory-analysis",
+     "qrng-analysis-toolkit",
+     "claude-scientific-skills"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "run_qhw_test_battery.py",
+     "run_qhw_test_battery.py",
+     "SKILL.md",
+     "SKILL.md",
+     "SKILL.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "helios-trajectory-analysis",
+     "qrng-analysis-toolkit",
+     "quantum-llama.cpp"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "run_qhw_test_battery.py",
+     "run_qhw_test_battery.py",
+     "test_qrng_quality.py",
+     "analyze_qrng_stream.py",
+     "analyze_qrng_stream.py"
+    ]
+   }
+  },
+  {
+   "id": "qrng-cmp",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "helios-trajectory-analysis",
+     "crypto-ml-trading-system-main",
+     "PRICE-DETECTION-TEST-1"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "experiment.py",
+     "RESEARCH_PROTOCOL.md",
+     "analyze_source_stability.py",
+     "ibm_quantum_qrng.py",
+     "ANALYSIS_PIPELINE.md"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "dfs",
+     "helios-trajectory-analysis",
+     "qrng-analysis-toolkit"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "experiment.py",
+     "experiment.py",
+     "experiment.py",
+     "experiment.py",
+     "RESEARCH_PROTOCOL.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "entropic_bridge",
+     "cell-research-emergence",
+     "helios-trajectory-analysis"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "__init__.py",
+     "__init__.py",
+     "prng.py",
+     "prng.py",
+     "exp5_fragility_comparison.py"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "entropic_bridge",
+     "helios-trajectory-analysis",
+     "qrng-analysis-toolkit"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "__init__.py",
+     "__init__.py",
+     "prng.py",
+     "prng.py",
+     "csprng.py"
+    ]
+   }
+  },
+  {
+   "id": "helios-chaos",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "infomeasure-main",
+     "entropic_bridge",
+     "consciousness-sim"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "index.md",
+     "__init__.py",
+     "index.md",
+     "index.md",
+     "__init__.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "FourD",
+     "consciousness-emergence-testbed",
+     "helios-trajectory-analysis"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "entropy.py",
+     "analyzer.py",
+     "causal_entropy.py",
+     "chaos_analysis.py",
+     "multiscale_sample_entropy.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "helios-trajectory-analysis"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "new_analyses_proposal.md",
+     "architecture.md",
+     "causal_entropy_analysis.md",
+     "new_analyses.md",
+     "new_analyses_proposed.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "helios-trajectory-analysis",
+     "consciousness-emergence-testbed"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "new_analyses_proposal.md",
+     "architecture.md",
+     "causal_entropy_analysis.md",
+     "new_analyses.md",
+     "analyzer.py"
+    ]
+   }
+  },
+  {
+   "id": "lfactory",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "NanoGPT",
+     "bayesgm-main",
+     "LlamaFactory"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "distributed_train.py",
+     "distributed_train.py",
+     "distributed_trm_train.py",
+     "distributed_trm_train.py",
+     "trm_train.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "LlamaFactory",
+     "vllm-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "qwen2_1.5b_qlora.yaml",
+     "qwen2_1.5b_qlora.yaml",
+     "lora.yaml",
+     "README.md",
+     "README.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "hermes-agent-main",
+     "LlamaFactory",
+     "unsloth-main"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "SKILL.md",
+     "README.md",
+     "README.md",
+     "alpaca_unsloth.json",
+     "TRAINING_LOG.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "LlamaFactory",
+     "hermes-agent-main",
+     "unsloth-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "SKILL.md",
+     "alpaca_unsloth.json",
+     "copilot-instructions.md"
+    ]
+   }
+  },
+  {
+   "id": "crypto",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "polymarket-bayesian-trader",
+     "ML.pdf",
+     "vikingdude81-RL-Trading-Agents"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "README.md",
+     "engine.go",
+     "engine.go",
+     "indicators.go",
+     "indicators.go"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "crypto-ml-trading-system-main",
+     "crypto-ml-trading-system",
+     "MEVBOT-v11scanner-CHATGPT-v2-KALSHI-INTEGRATION"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "README.md",
+     "replit.md",
+     "replit.md"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "DOD-BOT-Ai-production",
+     "deeplearningforfinance - Copy.pdf",
+     "deeplearningforfinance.pdf"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "deeplearningforfinance_1754630797216.pdf",
+     "deeplearningforfinance - Copy.pdf",
+     "deeplearningforfinance.pdf",
+     "README.md",
+     "README.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "crypto-ml-trading-system-main",
+     "crypto-ml-trading-system",
+     "moon-dev-ai-agents-main"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "README.md",
+     "README.md",
+     "README.md",
+     "QuantumDeviation_strategy.txt",
+     "deeplearningforfinance - Copy.pdf"
+    ]
+   }
+  },
+  {
+   "id": "agents",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "vikingdude81-RL-Trading-Agents",
+     "guilford_lattice",
+     "hermes-agent-main"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "integration.py",
+     "integration.py",
+     "README_NEURAL_AGENTS.md",
+     "README_NEURAL_AGENTS.md",
+     "integrated_system.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "hermes-agent-main",
+     "moon-dev-ai-agents-main",
+     "AI-STOCK-AGENT-ANALYSIS-20-PRODUCTION"
+    ],
+    "route1": 1,
+    "route3": 1,
+    "top_files": [
+     "DESCRIPTION.md",
+     "automation-smart-agent.md",
+     "__init__.py",
+     "__init__.py",
+     "__init__.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "AI-STOCK-AGENT-ANALYSIS-20-PRODUCTION",
+     "guilford_lattice",
+     "hermes-agent-main"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "__init__.py",
+     "__init__.py",
+     "__init__.py",
+     "__init__.py",
+     "README.md"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "AI-STOCK-AGENT-ANALYSIS-20-PRODUCTION",
+     "guilford_lattice",
+     "cell-research-emergence"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "__init__.py",
+     "__init__.py",
+     "__init__.py",
+     "__init__.py",
+     "README.md"
+    ]
+   }
+  },
+  {
+   "id": "lgi",
+   "scored": true,
+   "holo": {
+    "top_proj": [
+     "guilford_lattice",
+     "lgi-executive",
+     "FTTF-fournier (1)"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "navigator.py",
+     "navigator.py",
+     "thought_node.py",
+     "thought_node.py",
+     "__init__.py"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "guilford_lattice",
+     "lattice-grid-interface",
+     "claude-scientific-skills"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "navigator.py",
+     "navigator.py",
+     "USER_GUIDE.md",
+     "thought_node.py",
+     "thought_node.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "guilford_lattice",
+     "lgi-executive",
+     "AI_Command_Center"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "navigator.py",
+     "navigator.py",
+     "__init__.py",
+     "__init__.py",
+     "lib.rs"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "guilford_lattice",
+     "lgi-executive",
+     "lattice-grid-interface"
+    ],
+    "route1": 0,
+    "route3": 1,
+    "top_files": [
+     "navigator.py",
+     "navigator.py",
+     "__init__.py",
+     "__init__.py",
+     "policy.rs"
+    ]
+   }
+  },
+  {
+   "id": "stale-newton",
+   "scored": false,
+   "holo": {
+    "top_proj": [
+     "consciousness-emergence-testbed",
+     "gravity-phase-operator-main",
+     "TWISTRONICS-research"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "phase_space.py",
+     "data_generation.py",
+     "config_1774211105.json",
+     "config_1774211100.json",
+     "config_1774211095.json"
+    ]
+   },
+   "dense": {
+    "top_proj": [
+     "crypto-ml-trading-system-main",
+     "PRICE-DETECTION-TEST-1",
+     "LOCAL_Ai"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py"
+    ]
+   },
+   "bm25": {
+    "top_proj": [
+     "crypto-ml-trading-system",
+     "crypto-ml-trading-system-main",
+     "LOCAL_Ai"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py"
+    ]
+   },
+   "hybrid": {
+    "top_proj": [
+     "crypto-ml-trading-system",
+     "crypto-ml-trading-system-main",
+     "LOCAL_Ai"
+    ],
+    "route1": 0,
+    "route3": 0,
+    "top_files": [
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py",
+     "newton_basin_map.py"
+    ]
+   }
+  }
+ ]
+}

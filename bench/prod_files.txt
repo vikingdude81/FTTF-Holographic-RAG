@@ -1,0 +1,559 @@
+=== lpf_pipeline ===
+    E:\\lpf_pipeline\lpf_pipeline\README.md
+    E:\\lpf_pipeline\lpf_pipeline\requirements-edge.txt
+    E:\\lpf_pipeline\lpf_pipeline\requirements-gpu.txt
+    E:\\lpf_pipeline\lpf_pipeline\config\tickers.json
+    E:\\lpf_pipeline\lpf_pipeline\config\workstation_config.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\app.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\data_ingest.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\iv_surface_fitter.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\lpf_calibrator.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\mock_data_gen.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\run_pipeline.py
+    E:\\lpf_pipeline\lpf_pipeline\scripts\slv_bridge.py
+=== lpf_data ===
+    E:\\lpf_data\output\calibrated_params.json
+    E:\\lpf_data\output\SLV_backtest.json
+    E:\\lpf_data\output\SLV_iv_surface.json
+    E:\\lpf_data\output\SLV_trade_sizing.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-17\quote_09-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-17\quote_11-00-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-17\quote_12-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-17\quote_14-00-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-17\quote_15-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-18\quote_09-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-18\quote_11-00-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-18\quote_12-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-18\quote_14-00-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-18\quote_15-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-19\quote_09-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-19\quote_11-00-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-19\quote_12-30-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-19\quote_14-00-00.json
+    E:\\lpf_data\snapshots\QQQ\2026-03-19\quote_15-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-17\quote_09-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-17\quote_11-00-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-17\quote_12-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-17\quote_14-00-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-17\quote_15-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-18\quote_09-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-18\quote_11-00-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-18\quote_12-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-18\quote_14-00-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-18\quote_15-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-19\quote_09-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-19\quote_11-00-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-19\quote_12-30-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-19\quote_14-00-00.json
+    E:\\lpf_data\snapshots\SLV\2026-03-19\quote_15-30-00.json
+=== harmonic-field-consciousness ===
+    E:\\harmonic-field-consciousness\CONTRIBUTING.md
+    E:\\harmonic-field-consciousness\README.md
+    E:\\harmonic-field-consciousness\experiments\advanced_analysis.py
+    E:\\harmonic-field-consciousness\experiments\analyze_results.py
+    E:\\harmonic-field-consciousness\experiments\IMPLEMENTATION_SUMMARY.md
+    E:\\harmonic-field-consciousness\experiments\README.md
+    E:\\harmonic-field-consciousness\experiments\requirements.txt
+    E:\\harmonic-field-consciousness\experiments\run_all.py
+    E:\\harmonic-field-consciousness\experiments\run_all_results.json
+    E:\\harmonic-field-consciousness\experiments\category1_network_topology\exp1_topology_comparison.py
+    E:\\harmonic-field-consciousness\experiments\category1_network_topology\exp2_network_scaling.py
+    E:\\harmonic-field-consciousness\experiments\category1_network_topology\exp3_hub_disruption.py
+    E:\\harmonic-field-consciousness\experiments\category1_network_topology\exp4_modular_networks.py
+    E:\\harmonic-field-consciousness\experiments\category1_network_topology\exp5_brain_region_modularity.py
+    E:\\harmonic-field-consciousness\experiments\category1_network_topology\README.md
+    E:\\harmonic-field-consciousness\experiments\category2_dynamics\exp1_state_transitions.py
+    E:\\harmonic-field-consciousness\experiments\category2_dynamics\exp2_perturbation_recovery.py
+    E:\\harmonic-field-consciousness\experiments\category2_dynamics\exp3_coupling_strength.py
+    E:\\harmonic-field-consciousness\experiments\category2_dynamics\exp4_criticality_tuning.py
+    E:\\harmonic-field-consciousness\experiments\category2_dynamics\README.md
+    E:\\harmonic-field-consciousness\experiments\category3_functional_modifications\exp1_weighted_components.py
+    E:\\harmonic-field-consciousness\experiments\category3_functional_modifications\exp2_new_metrics.py
+    E:\\harmonic-field-consciousness\experiments\category3_functional_modifications\exp3_threshold_detection.py
+    E:\\harmonic-field-consciousness\experiments\category3_functional_modifications\exp4_component_correlation.py
+    E:\\harmonic-field-consciousness\experiments\category3_functional_modifications\README.md
+    E:\\harmonic-field-consciousness\experiments\category4_applications\exp1_neural_networks.py
+    E:\\harmonic-field-consciousness\experiments\category4_applications\exp2_social_networks.py
+    E:\\harmonic-field-consciousness\experiments\category4_applications\exp3_psychedelic_states.py
+    E:\\harmonic-field-consciousness\experiments\category4_applications\exp4_anesthesia_depth.py
+    E:\\harmonic-field-consciousness\experiments\category4_applications\README.md
+    E:\\harmonic-field-consciousness\experiments\category5_advanced\exp1_advanced_analysis.py
+    E:\\harmonic-field-consciousness\experiments\category5_advanced\exp2_integration_differentiation.py
+    E:\\harmonic-field-consciousness\experiments\category5_advanced\exp3_network_consciousness.py
+    E:\\harmonic-field-consciousness\experiments\category5_advanced\exp4_meditation_states.py
+    E:\\harmonic-field-consciousness\experiments\category5_advanced\exp5_deep_category_theory.py
+    E:\\harmonic-field-consciousness\experiments\notebooks\interactive_explorer.ipynb
+    E:\\harmonic-field-consciousness\experiments\notebooks\results_analysis.ipynb
+    E:\\harmonic-field-consciousness\experiments\r_analysis\01_time_series_granger.py
+    E:\\harmonic-field-consciousness\experiments\r_analysis\02_frequency_decomposition.py
+    E:\\harmonic-field-consciousness\experiments\r_analysis\03_spatial_patterns.py
+    ... (893 total)
+=== consciousness-emergence-testbed ===
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\.pre-commit-config.yaml
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\CHANGELOG.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\check_syntax.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\CONTRIBUTING.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docker-compose.yml
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\experiment_config.yaml
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\fix_project_syntax.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\metacognitive_logger.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\ops_fix_syntax.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\pyproject.toml
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\pytest.ini
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\README.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\requirements.txt
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\run_experiment.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\scanner.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\static_analysis.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\.claude\settings.local.json
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\.github\workflows\test.yml
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\.pytest_cache\README.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\config\config_loader.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\consciousness\entropy_analysis.py
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\consciousness\README_entropy_analysis.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\anti_patterns.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\architecture_dynamics.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\code_quality_analysis.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\consistency_rules.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\environment-configuration.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\environment_spec.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\epiplexity_estimator.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\exception_handling_guidelines.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\experiment_plan.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\extracted_signatures_schema.json
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\fan_out_integration_notes.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\fourd_integration_api.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\helios_integration_report.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\integration.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\integration_guide.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\integration_patterns.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\integration_plan.md
+    C:\Users\akbon\Projects\consciousness-emergence-testbed\docs\integration_points.md
+    ... (951 total)
+=== qrng-analysis-toolkit ===
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\config.example.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\pyproject.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\pytest.ini
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\qrng_inference_demo.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\requirements-pinned.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\requirements.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\run_full_qrng_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\run_qrng_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\run_qrng_inference_pilot.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\analyze_bientropy.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\analyze_inference_statistics.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\analyze_qrng_quality.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\analyze_saved_streams.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\analyze_source_stability.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\chaos_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\compare_qrng_sources.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\comprehensive_qrng_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\deep_pattern_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\influence_detection.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\qrng_comprehensive_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\qrng_deep_dive.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\qrng_deep_dive_v2.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\run_qhw_test_battery.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\analysis\__init__.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\collect_all_sources.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\collect_cipherstone_stream.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\cpu_hwrng.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\ibm_quantum_qrng.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\import_qrng_keys.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\qrng_daily_collector.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\qrng_outshift_client.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\qrng_spdc_source.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\test_qrng_live.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\collectors\__init__.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\cuquantum_accelerator\benchmarks.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\cuquantum_accelerator\core.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\cuquantum_accelerator\entropy.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-analysis-toolkit\cuquantum_accelerator\quantum_simulator.py
+    ... (587 total)
+=== ollama-auxrng ===
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.golangci.yaml
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\CMakeLists.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\CMakePresets.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\CONTRIBUTING.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\main.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\SECURITY.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\ISSUE_TEMPLATE\10_bug_report.yml
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\ISSUE_TEMPLATE\20_feature_request.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\ISSUE_TEMPLATE\30_model_request.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\ISSUE_TEMPLATE\config.yml
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\workflows\latest.yaml
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\workflows\release.yaml
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\.github\workflows\test.yaml
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\client.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\client_test.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\types.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\types_test.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\types_typescript_test.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\examples\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\examples\chat\main.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\examples\generate\main.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\examples\generate-streaming\main.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\examples\multimodal\main.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\api\examples\pull-progress\main.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\assets\assets.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\auth\connect.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\app.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\AppDelegate.h
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\app_darwin.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\app_darwin.h
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\app_windows.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\menu.h
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\cmd\app\webview.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\dialog\dlgs.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\dialog\dlgs_darwin.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\dialog\dlgs_windows.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\dialog\util.go
+    C:\Users\akbon\OneDrive\Documents\GitHub\ollama-auxrng\app\dialog\cocoa\dlg.h
+    ... (872 total)
+=== helios-trajectory-analysis ===
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\chaos_analysis.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\core.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\deep_pattern_analysis.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\helios_anomaly_scope.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\influence_detection.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\qrng_comprehensive_analysis.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\helios\metrics\entropy.py
+    C:\Users\akbon\Projects\helios-trajectory-analysis\tests\test_metrics.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\analyze_bientropy.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\analyze_inference_statistics.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\analyze_qrng_quality.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\analyze_saved_streams.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\analyze_source_stability.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\bientropy_metrics.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\causal_web_complexity.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\CHANGELOG.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\chaos_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\chaos_detector.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\collect_all_sources.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\collect_cipherstone_stream.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\compare_qrng_sources.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\comprehensive_qrng_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\conditional_entropy_flow.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\config.example.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\consciousness_metrics.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\coverage.html
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\cpu_hwrng.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\data_stream_loader.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\deep_pattern_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\entropy_analysis.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\entropy_estimators.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\entropy_estimators_robust.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\entropy_utils.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\environment.yml
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\epiplexity_estimator.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\file_utils.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\generate_full_report.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\GLOSSARY.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\helios_anomaly_scope.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\helios-trajectory-analysis\ibm_quantum_qrng.py
+    ... (901 total)
+=== lgi-executive ===
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\inspect_1b.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\lgi_config.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\search_output.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\search_output_1b.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\search_output_1b_v2.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\STATUS.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\test_circuit_integration.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\test_ckpt.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\test_e2e_forbidden_energy.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\test_improvements.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\test_qwen.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\chat\LGI_ROBUSTNESS_PLAN.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\chat\qwen_chat.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-api\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-api\src\lib.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-cli\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-cli\src\main.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\config.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\graph.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\guilford.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\lib.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\node.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\policy.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-core\src\score.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-entropy\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-entropy\src\lib.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-index\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-index\src\lib.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-sched\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-sched\src\lib.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-store\Cargo.toml
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\crates\lgi-store\src\lib.rs
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\demo\demo_server.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\demo\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\demo\run_archive\226c3e20-13d_1772008948.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\demo\run_archive\5788339e-0c1_1772002989.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\lgi-executive\workers\requirements.txt
+    ... (42 total)
+=== FTTF-fournier (1) ===
+    E:\\FTTF-fournier (1)\FTTF-fournier\band_results_analyzer.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\band_specific_config.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\band_specific_neuroevolution.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\experiment_ideas.md
+    E:\\FTTF-fournier (1)\FTTF-fournier\fourier_memory_test.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\fourier_visualization.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\jax_hybrid_neuroevolution.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\kk_inspired_evolution.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\kk_mode_mixing.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\kk_theory_and_experiments.md
+    E:\\FTTF-fournier (1)\FTTF-fournier\mahalanobis_analysis.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\mahalanobis_neuroevolution.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\multi_scale_fourier_memory.py
+    E:\\FTTF-fournier (1)\FTTF-fournier\project_summary.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\pyproject.toml
+    E:\\FTTF-fournier (1)\FTTF-fournier\README.md
+    E:\\FTTF-fournier (1)\FTTF-fournier\replit.md
+    E:\\FTTF-fournier (1)\FTTF-fournier\workflows_summary.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted--JAX-HYBRID-NEUROEVOLUTION-G-1762148126363_1762148126363.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-Here-s-the-refactored-logic-for-your-jax-hybrid-neuroevolution-py-script-This-changes-the-agent-s-1762395263483_1762395263484.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-Short-version-sort-of-in-quantum-theory-you-can-separate-factor-out-the-extra-compact-dim-1762462087807_1762462087807.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-That-clarification-helps-a-lot-If-you-re-looking-for-leveraged-exposure-without-options-or-liquida-1761248252517_1761248252518.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-This-is-a-fascinating-and-provocative-post-The-user-is-proposing-a-high-level-concept-and-your-que-1762135734110_1762135734111.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-This-is-a-great-question-The-answer-is-yes-to-both-Here-is-the-Python-code-to-create-the-visualiz-1762135878032_1762135878032.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-This-is-a-significantly-improved-and-much-more-professional-version-of-the-Full-Stack-Flip-strateg-1761248703358_1761248703358.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-This-is-an-excellent-result-Your-analysis-is-100-correct-and-this-log-output-is-the-perfe-1762152620011_1762152620011.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-This-log-is-the-perfect-and-expected-outcome-You-have-just-successfully-and-practically--1762147828134_1762147828134.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-Yep-that-s-actually-the-nice-part-Kaluza-Klein-is-basically-a-fancy-Fourier-story-on-a-hidden-ci-1762462097748_1762462097748.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-Yes-that-s-a-fascinating-and-powerful-connection-to-make-You-re-absolutely-right-You-can-combine--1762138041974_1762138041974.txt
+    E:\\FTTF-fournier (1)\FTTF-fournier\attached_assets\Pasted-Yes-you-absolutely-should-factor-in-the-underlying-asset-for-this-Full-Stack-Flip-strategy--1761248266279_1761248266279.txt
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\.claude\settings.local.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\.clinerules\Architecture & Strategy.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\.clinerules\Implementation & Testing.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\.pytest_cache\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\FTTF-fournier\band_results_analyzer.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\FTTF-fournier\band_specific_config.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\FTTF-fournier\band_specific_neuroevolution.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\FTTF-fournier\classical_baselines.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\FTTF-fournier\comprehensive_gui_demo.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\FTTF-fournier (1)\FTTF-fournier\comprehensive_holographic_memory.py
+    ... (110 total)
+=== FTTF-fournier (2) ===
+    E:\\FTTF-fournier (2)\_MERGED_INTO_CANONICAL.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\band_results_analyzer.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\band_specific_config.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\band_specific_neuroevolution.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\experiment_ideas.md
+    E:\\FTTF-fournier (2)\FTTF-fournier\fourier_memory_test.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\fourier_visualization.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\jax_hybrid_neuroevolution.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\kk_inspired_evolution.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\kk_mode_mixing.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\kk_theory_and_experiments.md
+    E:\\FTTF-fournier (2)\FTTF-fournier\mahalanobis_analysis.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\mahalanobis_neuroevolution.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\multi_scale_fourier_memory.py
+    E:\\FTTF-fournier (2)\FTTF-fournier\project_summary.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\pyproject.toml
+    E:\\FTTF-fournier (2)\FTTF-fournier\README.md
+    E:\\FTTF-fournier (2)\FTTF-fournier\replit.md
+    E:\\FTTF-fournier (2)\FTTF-fournier\workflows_summary.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted--JAX-HYBRID-NEUROEVOLUTION-G-1762148126363_1762148126363.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-Here-s-the-refactored-logic-for-your-jax-hybrid-neuroevolution-py-script-This-changes-the-agent-s-1762395263483_1762395263484.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-Short-version-sort-of-in-quantum-theory-you-can-separate-factor-out-the-extra-compact-dim-1762462087807_1762462087807.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-That-clarification-helps-a-lot-If-you-re-looking-for-leveraged-exposure-without-options-or-liquida-1761248252517_1761248252518.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-This-is-a-fascinating-and-provocative-post-The-user-is-proposing-a-high-level-concept-and-your-que-1762135734110_1762135734111.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-This-is-a-great-question-The-answer-is-yes-to-both-Here-is-the-Python-code-to-create-the-visualiz-1762135878032_1762135878032.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-This-is-a-significantly-improved-and-much-more-professional-version-of-the-Full-Stack-Flip-strateg-1761248703358_1761248703358.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-This-is-an-excellent-result-Your-analysis-is-100-correct-and-this-log-output-is-the-perfe-1762152620011_1762152620011.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-This-log-is-the-perfect-and-expected-outcome-You-have-just-successfully-and-practically--1762147828134_1762147828134.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-Yep-that-s-actually-the-nice-part-Kaluza-Klein-is-basically-a-fancy-Fourier-story-on-a-hidden-ci-1762462097748_1762462097748.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-Yes-that-s-a-fascinating-and-powerful-connection-to-make-You-re-absolutely-right-You-can-combine--1762138041974_1762138041974.txt
+    E:\\FTTF-fournier (2)\FTTF-fournier\attached_assets\Pasted-Yes-you-absolutely-should-factor-in-the-underlying-asset-for-this-Full-Stack-Flip-strategy--1761248266279_1761248266279.txt
+=== BitNet ===
+    E:\\BitNet\CMakeLists.txt
+    E:\\BitNet\CODE_OF_CONDUCT.md
+    E:\\BitNet\README.md
+    E:\\BitNet\requirements.txt
+    E:\\BitNet\run_inference.py
+    E:\\BitNet\run_inference_server.py
+    E:\\BitNet\SECURITY.md
+    E:\\BitNet\setup_env.py
+    E:\\BitNet\3rdparty\llama.cpp\.pre-commit-config.yaml
+    E:\\BitNet\3rdparty\llama.cpp\CMakeLists.txt
+    E:\\BitNet\3rdparty\llama.cpp\CMakePresets.json
+    E:\\BitNet\3rdparty\llama.cpp\CONTRIBUTING.md
+    E:\\BitNet\3rdparty\llama.cpp\convert.py
+    E:\\BitNet\3rdparty\llama.cpp\convert_hf_to_gguf.py
+    E:\\BitNet\3rdparty\llama.cpp\convert_hf_to_gguf_update.py
+    E:\\BitNet\3rdparty\llama.cpp\convert_llama_ggml_to_gguf.py
+    E:\\BitNet\3rdparty\llama.cpp\convert_lora_to_gguf.py
+    E:\\BitNet\3rdparty\llama.cpp\mypy.ini
+    E:\\BitNet\3rdparty\llama.cpp\pyproject.toml
+    E:\\BitNet\3rdparty\llama.cpp\pyrightconfig.json
+    E:\\BitNet\3rdparty\llama.cpp\README.md
+    E:\\BitNet\3rdparty\llama.cpp\requirements.txt
+    E:\\BitNet\3rdparty\llama.cpp\SECURITY.md
+    E:\\BitNet\3rdparty\llama.cpp\.devops\tools.sh
+    E:\\BitNet\3rdparty\llama.cpp\.github\labeler.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\pull_request_template.md
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\01-bug-low.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\02-bug-medium.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\03-bug-high.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\04-bug-critical.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\05-enhancement.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\06-research.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\07-refactor.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\ISSUE_TEMPLATE\config.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\workflows\build.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\workflows\close-issue.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\workflows\docker.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\workflows\editorconfig.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\workflows\gguf-publish.yml
+    E:\\BitNet\3rdparty\llama.cpp\.github\workflows\labeler.yml
+    ... (1300 total)
+=== quantum-llama.cpp ===
+    E:\\quantum-llama.cpp\.pre-commit-config.yaml
+    E:\\quantum-llama.cpp\build-xcframework.sh
+    E:\\quantum-llama.cpp\build_cpu.bat
+    E:\\quantum-llama.cpp\CLAUDE.md
+    E:\\quantum-llama.cpp\CMakeLists.txt
+    E:\\quantum-llama.cpp\CMakePresets.json
+    E:\\quantum-llama.cpp\CONTRIBUTING.md
+    E:\\quantum-llama.cpp\convert_hf_to_gguf.py
+    E:\\quantum-llama.cpp\convert_hf_to_gguf_update.py
+    E:\\quantum-llama.cpp\convert_llama_ggml_to_gguf.py
+    E:\\quantum-llama.cpp\convert_lora_to_gguf.py
+    E:\\quantum-llama.cpp\mypy.ini
+    E:\\quantum-llama.cpp\PROJECT_STATUS.md
+    E:\\quantum-llama.cpp\pyproject.toml
+    E:\\quantum-llama.cpp\pyrightconfig.json
+    E:\\quantum-llama.cpp\QUICK_START.txt
+    E:\\quantum-llama.cpp\README.md
+    E:\\quantum-llama.cpp\requirements.txt
+    E:\\quantum-llama.cpp\RUN_QUANTUM_TEST.md
+    E:\\quantum-llama.cpp\SECURITY.md
+    E:\\quantum-llama.cpp\SETUP_SUMMARY.md
+    E:\\quantum-llama.cpp\TEST_SUMMARY.md
+    E:\\quantum-llama.cpp\.claude\settings.local.json
+    E:\\quantum-llama.cpp\.devops\tools.sh
+    E:\\quantum-llama.cpp\.github\copilot-instructions.md
+    E:\\quantum-llama.cpp\.github\labeler.yml
+    E:\\quantum-llama.cpp\.github\pull_request_template.md
+    E:\\quantum-llama.cpp\.github\actions\get-tag-name\action.yml
+    E:\\quantum-llama.cpp\.github\actions\install-exe\action.yml
+    E:\\quantum-llama.cpp\.github\actions\linux-setup-spacemit\action.yml
+    E:\\quantum-llama.cpp\.github\actions\linux-setup-vulkan\action.yml
+    E:\\quantum-llama.cpp\.github\actions\unarchive-tar\action.yml
+    E:\\quantum-llama.cpp\.github\actions\windows-setup-cuda\action.yml
+    E:\\quantum-llama.cpp\.github\actions\windows-setup-curl\action.yml
+    E:\\quantum-llama.cpp\.github\actions\windows-setup-rocm\action.yml
+    E:\\quantum-llama.cpp\.github\ISSUE_TEMPLATE\010-bug-compilation.yml
+    E:\\quantum-llama.cpp\.github\ISSUE_TEMPLATE\011-bug-results.yml
+    E:\\quantum-llama.cpp\.github\ISSUE_TEMPLATE\019-bug-misc.yml
+    E:\\quantum-llama.cpp\.github\ISSUE_TEMPLATE\020-enhancement.yml
+    E:\\quantum-llama.cpp\.github\ISSUE_TEMPLATE\030-research.yml
+    ... (1546 total)
+=== mcmc-consciousness-lab ===
+    E:\\mcmc-consciousness-lab\deploy_to_hf.py
+    E:\\mcmc-consciousness-lab\index.html
+    E:\\mcmc-consciousness-lab\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\mcmc-consciousness-lab\deploy_to_hf.py
+    C:\Users\akbon\OneDrive\Documents\GitHub\mcmc-consciousness-lab\index.html
+    C:\Users\akbon\OneDrive\Documents\GitHub\mcmc-consciousness-lab\README.md
+=== qrng-diagnostic-lab ===
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\index.html
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\package.json
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\postcss.config.js
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\README.md
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\tailwind.config.js
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\vite.config.js
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\src\App.jsx
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\src\index.css
+    C:\Users\akbon\OneDrive\Documents\GitHub\qrng-diagnostic-lab\src\main.jsx
+=== LlamaFactory ===
+    E:\\LlamaFactory\.pre-commit-config.yaml
+    E:\\LlamaFactory\chat.py
+    E:\\LlamaFactory\check_lora.py
+    E:\\LlamaFactory\circuit_llm_integration.py
+    E:\\LlamaFactory\compare_models.py
+    E:\\LlamaFactory\extract_pdf.py
+    E:\\LlamaFactory\harmonic_background.py
+    E:\\LlamaFactory\harmonic_daemon.py
+    E:\\LlamaFactory\harmonic_experiments_bridge.py
+    E:\\LlamaFactory\harmonic_experiments_bridge_backup.py
+    E:\\LlamaFactory\harmonic_llm_bridge.py
+    E:\\LlamaFactory\huggingface_moltbook_agent.py
+    E:\\LlamaFactory\install_harmonic_service.bat
+    E:\\LlamaFactory\install_service.py
+    E:\\LlamaFactory\launch_webui.py
+    E:\\LlamaFactory\lieberman_2025_extracted.txt
+    E:\\LlamaFactory\model_wrapper.py
+    E:\\LlamaFactory\moltbook_integration.py
+    E:\\LlamaFactory\monitor.py
+    E:\\LlamaFactory\observation_log.json
+    E:\\LlamaFactory\oracle_engine_moltbook.py
+    E:\\LlamaFactory\pyproject.toml
+    E:\\LlamaFactory\quick_comparison.py
+    E:\\LlamaFactory\quick_test_integration.py
+    E:\\LlamaFactory\README.md
+    E:\\LlamaFactory\README_zh.md
+    E:\\LlamaFactory\smart_moltbook_agent.py
+    E:\\LlamaFactory\start_agent_service.bat
+    E:\\LlamaFactory\start_harmonic_daemon.bat
+    E:\\LlamaFactory\start_qwen_service.bat
+    E:\\LlamaFactory\stock_chat.py
+    E:\\LlamaFactory\test_api.py
+    E:\\LlamaFactory\test_chatgpt.py
+    E:\\LlamaFactory\test_pipeline.py
+    E:\\LlamaFactory\test_qwen.py
+    E:\\LlamaFactory\.claude\settings.local.json
+    E:\\LlamaFactory\.github\CODE_OF_CONDUCT.md
+    E:\\LlamaFactory\.github\CONTRIBUTING.md
+    E:\\LlamaFactory\.github\copilot-instructions.md
+    E:\\LlamaFactory\.github\PULL_REQUEST_TEMPLATE.md
+    ... (866 total)
+=== crypto-ml-trading-system ===
+    E:\\crypto-ml-trading-system\ACADEMIC_RESEARCH_MOMENTUM.md
+    E:\\crypto-ml-trading-system\ADAPTIVE_MUTATION_GPU_ML_GUIDE.md
+    E:\\crypto-ml-trading-system\ADVANCED_ML_GUIDE.md
+    E:\\crypto-ml-trading-system\AGENTS.md
+    E:\\crypto-ml-trading-system\AI_STOCK_AGENT_ANALYSIS_BRANCH_README.md
+    E:\\crypto-ml-trading-system\AI_STOCK_AGENT_DEPLOYMENT_GUIDE.md
+    E:\\crypto-ml-trading-system\AI_STOCK_AGENT_README.md
+    E:\\crypto-ml-trading-system\AI_STOCK_AGENT_SUMMARY.md
+    E:\\crypto-ml-trading-system\AI_STOCK_AGENT_SYSTEM_DOCUMENTATION.md
+    E:\\crypto-ml-trading-system\ANALYSIS_COMPLETE_SUMMARY.md
+    E:\\crypto-ml-trading-system\analyze_conservatism.py
+    E:\\crypto-ml-trading-system\analyze_genome_issue.py
+    E:\\crypto-ml-trading-system\analyze_gma_features.py
+    E:\\crypto-ml-trading-system\analyze_models.py
+    E:\\crypto-ml-trading-system\analyze_multitask.py
+    E:\\crypto-ml-trading-system\analyze_run2.py
+    E:\\crypto-ml-trading-system\ATTENTION_ANALYSIS_SUMMARY.md
+    E:\\crypto-ml-trading-system\AUDIT_FIXES_SUMMARY.md
+    E:\\crypto-ml-trading-system\audit_genome_consistency.py
+    E:\\crypto-ml-trading-system\audit_system.py
+    E:\\crypto-ml-trading-system\backtest_multiphase.py
+    E:\\crypto-ml-trading-system\backtest_multiphase_btc_20251025_225033.json
+    E:\\crypto-ml-trading-system\backtest_multiphase_btc_20251025_225751.json
+    E:\\crypto-ml-trading-system\backtest_results.json
+    E:\\crypto-ml-trading-system\BACKTEST_RESULTS_SUMMARY.md
+    E:\\crypto-ml-trading-system\backtest_rubberband_ml.py
+    E:\\crypto-ml-trading-system\backtest_rubberband_ml_20251026_142921.json
+    E:\\crypto-ml-trading-system\backtest_signals.py
+    E:\\crypto-ml-trading-system\BACKTEST_SUMMARY.md
+    E:\\crypto-ml-trading-system\backtest_ucb.py
+    E:\\crypto-ml-trading-system\BASELINE_TRAINING_ANALYSIS.md
+    E:\\crypto-ml-trading-system\BRIAN2_ASSESSMENT.md
+    E:\\crypto-ml-trading-system\calibrate_crypto_thresholds.py
+    E:\\crypto-ml-trading-system\CHAT_SESSION_REFERENCE.md
+    E:\\crypto-ml-trading-system\check_device.py
+    E:\\crypto-ml-trading-system\check_gpu.py
+    E:\\crypto-ml-trading-system\check_training_progress.py
+    E:\\crypto-ml-trading-system\CLAUDE.md
+    E:\\crypto-ml-trading-system\COMMIT_SUMMARY.md
+    E:\\crypto-ml-trading-system\COMMIT_SUMMARY_PHASE2.md
+    ... (2763 total)

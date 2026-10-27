@@ -1,0 +1,219 @@
+doc_count: 55951 version: 3 mtime_hash: 9b0b936c94f023ea
+cached projects: 217 cached files total: 55951
+ 15598  openclaw-main
+  7141  moon-dev-ai-agents-main
+  2964  PRICE-DETECTION-TEST-1
+  2962  crypto-ml-trading-system-main
+  2763  crypto-ml-trading-system
+  1902  claude-code-main (1)
+  1894  claude-scientific-skills
+  1546  quantum-llama.cpp
+  1300  BitNet
+  1209  LOCAL_Ai
+  1152  claude-scientific-skills-main
+   951  consciousness-emergence-testbed
+   901  helios-trajectory-analysis
+   893  harmonic-field-consciousness
+   872  ollama-auxrng
+   866  LlamaFactory
+   768  GitNexus-main
+   733  unsloth-main
+   693  hermes-agent-main
+   672  gmickel-claude-marketplace
+   587  qrng-analysis-toolkit
+   562  MERGE
+   487  AI-STOCK-AGENT-ANALYSIS-20-PRODUCTION
+   482  supermemory-main
+   385  OpenShell-main
+   374  AI_Command_Center
+   321  CC-SABR-AI-20-production-test
+   321  cell-research-emergence
+   297  Qwen-Agent-main
+   279  FourD
+   249  PSR-THEORY-AI-production
+   224  oracle-engine
+   205  infomeasure-main
+   202  attached_assets
+   198  vllm-main
+   182  NanoGPT
+   171  toe-2026-updates-main
+   163  QUANTUM-GENETICS
+   156  vikingdude81-RL-Trading-Agents
+   144  NemoClaw-main
+   136  QUANTUM-EXAMPLES
+   134  AI-Trader-main
+   127  guilford_lattice
+   110  FTTF-fournier (1)
+    99  circuit-tracer-main
+    88  APDTFlow-main
+    83  Agent-Evolve
+    83  GRAPH-CHAOS-AI-production
+    76  polymarket-bayesian-trader
+    69  DOD-BOT-Ai-production
+    67  consciousness-sim
+    64  ML andd Finanace-20260309T065128Z-1-001
+    63  QUANTUM-SUITE-production
+    61  01_Neon_Rising_v3
+    55  BitNet-main
+    49  geom-imbalance-main
+    42  lgi-executive
+    40  SLV
+    39  kalshi-backtest-rs
+    37  bayesgm-main
+    35  QUANTUM-SUITE
+    34  entropic_bridge
+    34  files
+    34  lpf_data
+    33  TWISTRONICS-research
+    31  FTTF-fournier (2)
+    27  MEVBOT-v11scanner-CHATGPT-v2-KALSHI-INTEGRATION
+    25  KALSHI
+    25  lattice-grid-interface
+    15  stockpredictionai-master
+    14  LOCAL-AI-FAST
+    14  minGPT-master
+    13  Chaotic-Maps-v4-working
+    13  memory-agent-demo
+    12  dfs
+    12  lpf_pipeline
+    11  HEAVY METAL MASTER
+    10  synapse-link
+     9  awesome-conformal-prediction-main
+     9  qrng-diagnostic-lab
+     9  stochastic-scatter
+     8  nn-zero-to-hero-master
+     8  game_theory_framework
+     8  cyber-fluid-dynamics
+     8  geometric-governance-sim
+     7  GRAPH-THEORY-TEST-v10-WORKS
+     7  micrograd-master
+     6  autoresearch-master
+     6  autoresearch-master (1)
+     6  causal-emergence-lab
+     6  HMM-BOT-V21
+     6  mcmc-consciousness-lab
+     6  mcmc-dashboard
+     6  mcmc-walker
+     6  neuro-agent-lab
+     6  neuro-tune
+     6  world-model-planner
+     4  ancient-forecasting-simulator-main
+     4  MEVBOT-20-Gemini
+     3  consciousness-emergence-agi
+     3  tumbleweed-drifter
+     2  CHAT-GPT-INTERFACE-V2-gemini
+     2  gravity-phase-operator-main
+     2  llmfit-main
+     2  Mastering-Modern-Time-Series-Forecasting-The-Complete-Guide-main
+     2  QUANTUM-GENETICS (1)
+     1  cli.py
+     1  collective_agency_manager.py
+     1  compare_gaf_vs_agent.py
+     1  compare_hybrid_vs_mc.py
+     1  consciousness_enhanced_prisoner_dilemma.py
+     1  conscious_challenge_predictor.py
+     1  conscious_collective_agency.py
+     1  conscious_dialogue_system.py
+     1  8627fe009c40f57531cb18360106ce95-14fb038816c7aae0bb9342c2dbf1a51dd134a5ff
+     1  Awesome_Math_Books-main
+     1  Transformers_And_LLM_Are_What_You_Dont_Need-main
+     1  Unsupervised-conformal-prediction-NeurIPS2025-main
+     1  NECRO.txt
+     1  game-theory-simulations
+     1  5090 brain.txt
+     1  Laplace-Transforms-in-Theory-and-Practice_ebook_1.0.0
+     1  15mathconceptseverydatascientistshouldknow.pdf
+     1  2000 AD DOWNLOAD LINK.pdf
+     1  2858ce03-1bcf-41f5-a30b-4635f33a054b-meca.pdf
+     1  33a0b9ca-78f0-4891-9d30-8910192b8b2f-meca.pdf
+     1  39a89eb2-8c7d-4df2-a380-2c24466aee44-meca (1).pdf
+     1  39a89eb2-8c7d-4df2-a380-2c24466aee44-meca.pdf
+     1  3e250cde-958d-4875-82e2-3b4a500967cf-meca.pdf
+     1  3e55dea1-d2a4-45a7-a772-a656693cd7e4-meca.pdf
+     1  638199_A_Users_Guide_to_Restructuring_the_Global_Trading_System.pdf
+     1  6a142553-8bcc-4bea-abd2-b806e1e47a75-meca.pdf
+     1  712aca3a-35f5-4430-81f2-c139ea740dae-meca.pdf
+     1  946444c6-54d2-4f8d-bc12-0d280a4f6e38-meca.pdf
+     1  A Theory of Everything - ZoraASI - C.M., Baird (2026).pdf
+     1  Active Inference The Free Energy Principle in Mind, Brain, and Behavior (Thomas Parr, Giovanni Pezzulo etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+     1  CONAN DOWNLOAD LINK.pdf
+     1  Consciousnetics (1).pdf
+     1  Consciousnetics.pdf
+     1  CREEPY PDF DOWNLOAD LINK (1).pdf
+     1  CREEPY PDF DOWNLOAD LINK.pdf
+     1  Creepy_050.pdf
+     1  Creepy_091.pdf
+     1  Creepy_092.pdf
+     1  Creepy_123.pdf
+     1  deeplearningforfinance - Copy.pdf
+     1  deeplearningforfinance.pdf
+     1  EERIE PDF DOWNLOAD LINK (1).pdf
+     1  EERIE PDF DOWNLOAD LINK.pdf
+     1  EPIC ILLUSTRATED DOWNLOAD LINK.pdf
+     1  FAMOUS MONSTERS DOWNLOAD LINK.pdf
+     1  FEMME FATALES PDF DOWNLOAD.pdf
+     1  Forbidden Rites - A Necromancer's Manual of the Fifteenth Century (Magic in History) - Richard Kieckhefer (1).pdf
+     1  Forbidden Rites - A Necromancer's Manual of the Fifteenth Century (Magic in History) - Richard Kieckhefer.pdf
+     1  hands-oncybersecurityforarchitects_ebook.pdf
+     1  hands-oncybersecuritywithblockchain_ebook.pdf
+     1  hands-ongeneticalgorithmswithpython_secondedition.pdf
+     1  hands-onpenetrationtestingonwindows_ebook.pdf
+     1  HEAVY METAL DOWNLOAD LINK.pdf
+     1  Home Networking Wallchart.pdf
+     1  How_To_Guide.01.pdf
+     1  industrialcybersecurity_ebook.pdf
+     1  intellectualpropertystrategy.pdf
+     1  learningmalwareanalysis_ebook.pdf
+     1  machinetranslation.pdf
+     1  masteringkalilinuxforadvancedpenetrationtesting_ebook.pdf
+     1  masteringnlpfromfoundationstollms.pdf
+     1  masteringpfsense_ebook.pdf
+     1  masteringpytorch.pdf
+     1  masteringsalesforcereportsanddashboards.pdf
+     1  memesindigitalculture.pdf
+     1  metadata.pdf
+     1  metasploitforbeginners_ebook.pdf
+     1  metasploitpenetrationtestingcookbook_ebook.pdf
+     1  ML.pdf
+     1  Modern.Digital.and.Analog.Communication.Systems.5th.Edition.(z-lib.org) (1).pdf
+     1  moderntimeseriesforecastingwithpython_secondedition.pdf
+     1  moocs.pdf
+     1  MTips.pdf
+     1  networkanalysisusingwireshark2cookbook_ebook.pdf
+     1  nmap_networkexplorationandsecurityauditingcookbook_ebook.pdf
+     1  openaccess.pdf
+     1  otherworldorglim01leef.pdf
+     1  paradox.pdf
+     1  Playbook-Executive-Briefing-Artificial-Intelligence.pdf
+     1  Playbook-Executive_Briefing-Machine-Learning (1).pdf
+     1  Playbook-Executive_Briefing-Machine-Learning.pdf
+     1  Playboy Download Link.pdf
+     1  practicalcyberintelligence_ebook.pdf
+     1  practicalmobileforensics_ebook.pdf
+     1  pythonfeatureengineeringcookbook_thirdedition.pdf
+     1  pythonmachinelearningbyexample_fourthedition.pdf
+     1  rag-drivengenerativeai.pdf
+     1  RED SONJA DOWNLOAD LINK.pdf
+     1  robots.pdf
+     1  Schedule An Appointment - Confirmation _ USPS.pdf
+     1  SCTE Arris Databook.pdf
+     1  self-tracking.pdf
+     1  SLOW DEATH DOWNLOAD LINK.pdf
+     1  Splendor-Solis.pdf
+     1  ssrn_id4501707_code759326.pdf
+     1  ssrn_id4626835_code6273046.pdf
+     1  ssrn_id5190840_code3635775 (1).pdf
+     1  ssrn_id5190840_code3635775.pdf
+     1  STARWARS DOWNLOAD LINK.pdf
+     1  sustainability.pdf
+     1  tableaustrategies.pdf
+     1  thefuture.pdf
+     1  theinternetofthings.pdf
+     1  thetechnologicalsingularity.pdf
+     1  The_Worship_of_the_Dead_A_Rigorous_Inqui.pdf
+     1  tinymlcookbook.pdf
+     1  TSLA_Strategy.pdf
+     1  VR.pdf
+     1  webpenetrationtestingwithkalilinux_ebook.pdf
+     1  WEIRD TALES DOWNLOAD LINK.pdf
+     1  xgboostforregressionpredictivemodelingandtimeseriesanalysis.pdf

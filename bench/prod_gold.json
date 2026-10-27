@@ -1,0 +1,21 @@
+{
+  "note": "Blind production bench: queries written from project knowledge + Chroma file lists, NOT from hologram output. gold_projects = acceptable projects (yoked/near-duplicate projects listed together); gold_files = basenames, hit if any ranked path ends with one.",
+  "queries": [
+    {"id": "lpf-gex", "query": "implied volatility surface fitting and gamma exposure calibration from option chains", "gold_projects": ["lpf_pipeline"], "gold_files": ["iv_surface_fitter.py", "lpf_calibrator.py", "slv_bridge.py"]},
+    {"id": "lpf-snap", "query": "intraday market snapshot quotes for silver and index ETFs", "gold_projects": ["lpf_data"], "gold_files": ["calibrated_params.json", "SLV_backtest.json"]},
+    {"id": "hfc-topo", "query": "network topology experiments hub disruption modularity brain regions", "gold_projects": ["harmonic-field-consciousness"], "gold_files": ["exp3_hub_disruption.py", "exp5_brain_region_modularity.py"]},
+    {"id": "hfc-iit", "query": "integration and differentiation measures of conscious networks", "gold_projects": ["harmonic-field-consciousness"], "gold_files": ["exp2_integration_differentiation.py", "exp3_network_consciousness.py"]},
+    {"id": "cet-epi", "query": "epiplexity estimator for codebase evolution experiment", "gold_projects": ["consciousness-emergence-testbed"], "gold_files": ["epiplexity_estimator.md", "epiplexity_estimator.py"]},
+    {"id": "fttf-holo", "query": "holographic Fourier transform project addressing retrieval cache", "gold_projects": ["FTTF-fournier (1)", "FTTF-fournier (2)"], "gold_files": ["README.md"]},
+    {"id": "bitnet", "query": "1-bit ternary quantized LLM training kernels", "gold_projects": ["BitNet"], "gold_files": []},
+    {"id": "ggml", "query": "quantized dot product CPU backend inference kernels for llama models", "gold_projects": ["quantum-llama.cpp"], "gold_files": []},
+    {"id": "auxrng", "query": "injecting an auxiliary hardware entropy source into model token sampling", "gold_projects": ["ollama-auxrng"], "gold_files": []},
+    {"id": "qrng-batt", "query": "randomness test battery chi-square stream quality diagnostics", "gold_projects": ["qrng-analysis-toolkit", "qrng-diagnostic-lab"], "gold_files": ["run_qhw_test_battery.py", "analyze_qrng_quality.py"]},
+    {"id": "qrng-cmp", "query": "compare hardware versus cloud random number source stability", "gold_projects": ["qrng-analysis-toolkit", "helios-trajectory-analysis"], "gold_files": ["compare_qrng_sources.py", "analyze_source_stability.py"]},
+    {"id": "helios-chaos", "query": "chaos detection and conditional entropy flow across bit streams", "gold_projects": ["helios-trajectory-analysis", "qrng-analysis-toolkit"], "gold_files": ["conditional_entropy_flow.py", "chaos_detector.py"]},
+    {"id": "lfactory", "query": "LoRA fine-tuning dataset configuration multi-GPU training", "gold_projects": ["LlamaFactory"], "gold_files": []},
+    {"id": "crypto", "query": "cryptocurrency machine learning trading strategy backtest features", "gold_projects": ["crypto-ml-trading-system", "crypto-ml-trading-system-main"], "gold_files": []},
+    {"id": "agents", "query": "autonomous AI agents with tool use and memory orchestration framework", "gold_projects": ["moon-dev-ai-agents-main", "claude-code-main (1)", "hermes-agent-main"], "gold_files": []},
+    {"id": "lgi", "query": "thought graph beam search with adaptive threshold gating", "gold_projects": ["lgi-executive"], "gold_files": []}
+  ]
+}
